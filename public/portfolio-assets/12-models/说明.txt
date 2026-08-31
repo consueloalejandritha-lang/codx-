@@ -1,0 +1,33 @@
+交互模型位置：作品归档 → 03 Plasticity 建模 → 工业形体 → Plasticity 01
+精选项目第03张「枪械制造」保持静态图片，不加载模型。
+
+网站读取：pistol-blend-baked.glb
+来源：本次提供的「手枪枪口火焰渲染.blend」打包工程，重新提取与转换。
+旧GLB不再读取，也没有复用其中的材质；原始Blender文件未修改。
+
+当前版本
+1. 原工程136张打包贴图已提取到本机临时工作区，网站不加载庞大的原工程。
+2. 多层材质烘焙成2048像素贴图，包含颜色、金属度、粗糙度、法线、透明和发光。
+3. 保留第7帧实际生成的枪口火焰、烟雾、弹壳与弹头。
+4. 远处的火焰素材副本、拍摄器材不属于展示主体；保留的是枪口实际生成的效果。
+5. 火焰和烟雾是静态三维快照，随模型旋转。未导入完整射击动画或体积灯光场景。
+6. 浏览器采用实时光照，烟雾等视角相关效果经过近似转换，不等同于Cycles最终渲染。
+7. 模型约21.4MB，几何解码器随网站存放于public/vendor/draco，不依赖外部服务。
+
+如何替换
+- 已处理好的网页模型：覆盖此文件夹里的pistol-blend-baked.glb并刷新页面。
+- 新Blender或FBX源文件不能只改扩展名，需要重新转换、烘焙与检查。
+- 模型名称变化：同步修改src/data/portfolio.ts中plasticity分类第01项的第5个参数。
+- Plasticity 01的静态备用图：03-plasticity/plasticity-01.jpg。
+- 精选「枪械制造」的静态图：03-plasticity/plasticity-06.jpg。
+
+交互
+- 鼠标跟随约水平±39°、垂直±17°，移出平滑回正。
+- 触屏横向拖动，松手回正；纵向页面滚动保留。
+- 键盘方向键旋转，Home或Escape回正。
+- 进入可见区域附近才加载；失败时显示该位置的原静态图片。
+
+默认视角与光照：src/components/modelViewer.ts
+旋转幅度：src/components/modelMotion.ts
+标题、备用图和模型路径：src/data/portfolio.ts
+转换流程：scripts/PISTOL_PIPELINE.md

@@ -1,0 +1,18 @@
+这是网站正在直接读取的素材文件夹。
+
+替换方法：进入对应编号文件夹，用新素材覆盖同名文件，然后在网页按 Ctrl + F5。
+只覆盖现有文件时，不需要修改任何代码。
+
+00-hero       首页视频与封面
+01-modeling   建模展示
+02-topology   布线建模
+03-plasticity Plasticity 建模
+04-boolean    Blender 布尔建模
+05-rigging    绑定展示
+06-early      早期作品
+07-other      其他展示
+08-spin       Spin 动态 WebP
+09-profile    个人头像
+10-brand      APP 图标
+
+完整说明请看项目根目录：图片快速替换指南.md
