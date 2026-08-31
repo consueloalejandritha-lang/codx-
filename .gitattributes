@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep content-hashed media byte-identical on Windows and cloud build hosts.
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.webp -text
+*.gif -text
+*.mp4 -text
+*.webm -text
+*.glb -text
+*.wasm -text

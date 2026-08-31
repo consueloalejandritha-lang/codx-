@@ -1,0 +1,2226 @@
+{
+  "version": "media-v1",
+  "entries": {
+    "/portfolio-assets/00-hero/hero-background.mp4": {
+      "sourceHash": "00468a32b9e6088de87c754f77ea8a3979b7483ea49b3229fd4e9c45af8ec7c2",
+      "sourceBytes": 3139613,
+      "kind": "video",
+      "alpha": false,
+      "variants": [
+        {
+          "url": "/optimized-assets/00-hero-hero-background-1280-05fb054abfb7.mp4",
+          "bytes": 638752,
+          "width": 1280
+        },
+        {
+          "url": "/optimized-assets/00-hero-hero-background-1600-7a01803ff602.mp4",
+          "bytes": 1323561,
+          "width": 1600
+        }
+      ],
+      "mobile": "/optimized-assets/00-hero-hero-background-1280-05fb054abfb7.mp4",
+      "default": "/optimized-assets/00-hero-hero-background-1600-7a01803ff602.mp4"
+    },
+    "/portfolio-assets/00-hero/hero-background.webm": {
+      "sourceHash": "528d059a4f812c86a1f6a328639457bf9754096db720c5e5043c1830707bb48c",
+      "sourceBytes": 4241042,
+      "kind": "video",
+      "alpha": true,
+      "variants": [
+        {
+          "url": "/optimized-assets/00-hero-hero-background-1280-94caaf4d3c4d.webm",
+          "bytes": 1670053,
+          "width": 1280
+        },
+        {
+          "url": "/optimized-assets/00-hero-hero-background-1600-72e5aaa20906.webm",
+          "bytes": 2874877,
+          "width": 1600
+        }
+      ],
+      "mobile": "/optimized-assets/00-hero-hero-background-1280-94caaf4d3c4d.webm",
+      "default": "/optimized-assets/00-hero-hero-background-1600-72e5aaa20906.webm"
+    },
+    "/portfolio-assets/00-hero/hero-poster.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "88d2231210cbc7041251305ea508bee9f7a284876bd5648f9e0b181ab6153026",
+      "sourceBytes": 138613,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/00-hero-hero-poster-480w-cd279d7527df.webp",
+          "bytes": 9946,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/00-hero-hero-poster-960w-2b87738b0e9a.webp",
+          "bytes": 28368,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/00-hero-hero-poster-1600w-576b9e130649.webp",
+          "bytes": 58912,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/00-hero-hero-poster-1920w-02c8c4c1bd47.webp",
+          "bytes": 76576,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/00-hero-hero-poster-1920w-02c8c4c1bd47.webp"
+    },
+    "/portfolio-assets/01-modeling/featured-mech.webp": {
+      "revision": "image-v2",
+      "sourceHash": "3d47dd1800ccfed73d8be3d140efab0cfaec757e504ac2b022f14749b30b0265",
+      "sourceBytes": 237770,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-featured-mech-480w-ca6aafce1082.webp",
+          "bytes": 42154,
+          "width": 480,
+          "height": 687
+        },
+        {
+          "url": "/optimized-assets/01-modeling-featured-mech-960w-4d17c7d0a5d7.webp",
+          "bytes": 114384,
+          "width": 960,
+          "height": 1373
+        },
+        {
+          "url": "/optimized-assets/01-modeling-featured-mech-1600w-73411b56c945.webp",
+          "bytes": 237108,
+          "width": 1600,
+          "height": 2288
+        },
+        {
+          "url": "/optimized-assets/01-modeling-featured-mech-1678w-3d47dd1800cc.webp",
+          "bytes": 237770,
+          "width": 1678,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-featured-mech-1678w-3d47dd1800cc.webp"
+    },
+    "/portfolio-assets/01-modeling/model-01.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "8bb3a03bb5289143266778285e293d85fbc7d5c83a610686da99fc8ee8c1edbf",
+      "sourceBytes": 101931,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-01-480w-e9c6b42724c5.webp",
+          "bytes": 7524,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-01-960w-2932615cf5cc.webp",
+          "bytes": 21492,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-01-1600w-fcd6c64b55fc.webp",
+          "bytes": 44904,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-01-1920w-01f5f9ce0d1a.webp",
+          "bytes": 60918,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-01-1920w-01f5f9ce0d1a.webp"
+    },
+    "/portfolio-assets/01-modeling/model-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "90335e0d56d59610069ad6acbcd217a9ae8032592ca24aaf151e632ca9d0688c",
+      "sourceBytes": 164464,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-02-480w-1f544133e6dd.webp",
+          "bytes": 14612,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-02-960w-d8392a0c4a88.webp",
+          "bytes": 40576,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-02-1600w-75412994dce3.webp",
+          "bytes": 80318,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-02-1920w-9ef9da98d1aa.webp",
+          "bytes": 105928,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-02-1920w-9ef9da98d1aa.webp"
+    },
+    "/portfolio-assets/01-modeling/model-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "af0f81bbe6f5236ef36e342155aeeab84d721b4ff365c39e1c069aedd319a77f",
+      "sourceBytes": 247515,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-03-480w-f89a350bf312.webp",
+          "bytes": 27290,
+          "width": 480,
+          "height": 687
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-03-960w-4a18ee92e2d2.webp",
+          "bytes": 62318,
+          "width": 960,
+          "height": 1373
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-03-1600w-45d480e34ebb.webp",
+          "bytes": 116298,
+          "width": 1600,
+          "height": 2288
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-03-1678w-e18732d9f8bc.webp",
+          "bytes": 125754,
+          "width": 1678,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-03-1678w-e18732d9f8bc.webp"
+    },
+    "/portfolio-assets/01-modeling/model-04.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "d0fad54eec6b0d5c1b3f2fe4dafe774bb168c3bd1320ac2d81cf5b342ebc49e6",
+      "sourceBytes": 262466,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-04-480w-3fefc922e771.webp",
+          "bytes": 30568,
+          "width": 480,
+          "height": 687
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-04-960w-4012dd9cfa46.webp",
+          "bytes": 72022,
+          "width": 960,
+          "height": 1373
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-04-1600w-4053ee0d71e9.webp",
+          "bytes": 137010,
+          "width": 1600,
+          "height": 2288
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-04-1678w-aec26867f2a3.webp",
+          "bytes": 146908,
+          "width": 1678,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-04-1678w-aec26867f2a3.webp"
+    },
+    "/portfolio-assets/01-modeling/model-05.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "ff402e95789da1e94ac46d849bbdbf3b277cedf568bd1f8dd3eae5f740d34afc",
+      "sourceBytes": 80910,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-05-480w-09072989fa91.webp",
+          "bytes": 3596,
+          "width": 480,
+          "height": 134
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-05-960w-c3098f337b65.webp",
+          "bytes": 10706,
+          "width": 960,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-05-1600w-2b058bfbe9ab.webp",
+          "bytes": 23660,
+          "width": 1600,
+          "height": 450
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-05-2400w-c21ee01f9047.webp",
+          "bytes": 43402,
+          "width": 2400,
+          "height": 675
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-05-2400w-c21ee01f9047.webp"
+    },
+    "/portfolio-assets/01-modeling/model-06.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "88267271c26df8079e3167ccdecfde12f7841cff20cd3aa5a2b61a5bb0d56211",
+      "sourceBytes": 275495,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-06-480w-6580d2925c46.webp",
+          "bytes": 33850,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-06-960w-bee119c1ef73.webp",
+          "bytes": 112818,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-06-1350w-eb828fccdb6d.webp",
+          "bytes": 202008,
+          "width": 1350,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-06-1350w-eb828fccdb6d.webp"
+    },
+    "/portfolio-assets/01-modeling/model-07.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "ec941ff450520f11237a8ca7cea092e8ceb68d5bfae29267abbc4a5a1a4f11d8",
+      "sourceBytes": 227778,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-07-480w-abd12be1b496.webp",
+          "bytes": 28986,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-07-960w-44ce43e65bd8.webp",
+          "bytes": 90624,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-07-1350w-c39183faeddc.webp",
+          "bytes": 157864,
+          "width": 1350,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-07-1350w-c39183faeddc.webp"
+    },
+    "/portfolio-assets/01-modeling/model-08.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "e024e817870e056a8e325546b52e70c3fc1bd6df82ed16cbef82fa5727b1ae6e",
+      "sourceBytes": 173612,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/01-modeling-model-08-480w-cd8ffe180491.webp",
+          "bytes": 13454,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-08-960w-dc1233ac1337.webp",
+          "bytes": 37238,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-08-1600w-b90d29267c45.webp",
+          "bytes": 73356,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/01-modeling-model-08-2275w-569298102625.webp",
+          "bytes": 116930,
+          "width": 2275,
+          "height": 1279
+        }
+      ],
+      "default": "/optimized-assets/01-modeling-model-08-2275w-569298102625.webp"
+    },
+    "/portfolio-assets/02-topology/topology-01.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "d56138662ec706a4d6818e61c95f3e751ba9554276acf267852fe734a7de49aa",
+      "sourceBytes": 63724,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-01-480w-b6981131caf7.webp",
+          "bytes": 8036,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-01-960w-dd3aeb19b813.webp",
+          "bytes": 18776,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-01-1080w-cda3a60f0135.webp",
+          "bytes": 21972,
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-01-1080w-cda3a60f0135.webp"
+    },
+    "/portfolio-assets/02-topology/topology-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "82ec88ef78b2091f045023d593e9ffcba859ee61f523102ba4ffddb555e6596e",
+      "sourceBytes": 80557,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-02-480w-d9dc5efee1fd.webp",
+          "bytes": 9088,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-02-960w-4db7ac1bd5bc.webp",
+          "bytes": 27670,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-02-1080w-996f109b72df.webp",
+          "bytes": 34562,
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-02-1080w-996f109b72df.webp"
+    },
+    "/portfolio-assets/02-topology/topology-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "a672c2f4c0ef2d7b916ddca3f840ccaaa962782a5d09dab69588af834b4024d2",
+      "sourceBytes": 198097,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-03-480w-9d11a580adf3.webp",
+          "bytes": 14218,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-03-960w-9448282a34be.webp",
+          "bytes": 44172,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-03-1600w-41069b4fe1e2.webp",
+          "bytes": 95358,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-03-1920w-0619715741c1.webp",
+          "bytes": 124734,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-03-1920w-0619715741c1.webp"
+    },
+    "/portfolio-assets/02-topology/topology-04.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "d108460ff5d0b8b12318268cfcf5234697fde4e20392872f1c0b56d600b4edfd",
+      "sourceBytes": 199204,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-04-480w-5fcf9b2fed16.webp",
+          "bytes": 27684,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-04-960w-983b9267b204.webp",
+          "bytes": 68808,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-04-1350w-01d3dd9ebc91.webp",
+          "bytes": 106922,
+          "width": 1350,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-04-1350w-01d3dd9ebc91.webp"
+    },
+    "/portfolio-assets/02-topology/topology-05.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "0d7454e8d3be79f526b6c035af262e45d4b060aa2df4f8c5fc73987c906e4a8d",
+      "sourceBytes": 420094,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-05-480w-26c536ebc1d6.webp",
+          "bytes": 49468,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-05-960w-17401b6cb871.webp",
+          "bytes": 156336,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-05-1350w-f84d5e0072db.webp",
+          "bytes": 269294,
+          "width": 1350,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-05-1350w-f84d5e0072db.webp"
+    },
+    "/portfolio-assets/02-topology/topology-06.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "78cb4a69a80fc6c2ad56cc7fef1a566b5f1a0a89e554c2b63a1d701bb75487ce",
+      "sourceBytes": 132594,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-06-480w-4756ab028665.webp",
+          "bytes": 16550,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-06-960w-f1763247ecab.webp",
+          "bytes": 52300,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-06-1080w-998c44683709.webp",
+          "bytes": 64846,
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-06-1080w-998c44683709.webp"
+    },
+    "/portfolio-assets/02-topology/topology-07.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "c7795e88609959cc9227dfaee9522ff3e4836d62887fc66ae5a662f559674f29",
+      "sourceBytes": 65328,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-07-480w-13b5f3dc7668.webp",
+          "bytes": 6404,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-07-960w-623c38e6bcb4.webp",
+          "bytes": 14458,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-07-1080w-c4eaf66c3fef.webp",
+          "bytes": 17188,
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-07-1080w-c4eaf66c3fef.webp"
+    },
+    "/portfolio-assets/02-topology/topology-08.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "e58216b48c84ffae4464b1b225f7513511a9fe86174d627bc35155eeba0967a5",
+      "sourceBytes": 156331,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-08-480w-692bfd0a3bb0.webp",
+          "bytes": 8000,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-08-960w-3be4146e2cc5.webp",
+          "bytes": 30902,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-08-1600w-29d16c7bfe26.webp",
+          "bytes": 71616,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-08-1920w-3e55fcf63eaa.webp",
+          "bytes": 93786,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-08-1920w-3e55fcf63eaa.webp"
+    },
+    "/portfolio-assets/02-topology/topology-09.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "ef9fd2b2114728ec192ac37ddbb4e162cb307e0a00db3de941c609e631af7475",
+      "sourceBytes": 313870,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-09-480w-f5e235c1e57d.webp",
+          "bytes": 16782,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-09-960w-79b55a40c292.webp",
+          "bytes": 55284,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-09-1600w-d234570f7fa0.webp",
+          "bytes": 121970,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-09-2400w-b98d7a6b990a.webp",
+          "bytes": 206598,
+          "width": 2400,
+          "height": 1350
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-09-2400w-b98d7a6b990a.webp"
+    },
+    "/portfolio-assets/02-topology/topology-10.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "6b1ce3743ee14d46cbeeceb85da6c3062dc77ced5ef2a38489a89a436cc2478e",
+      "sourceBytes": 90716,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-10-480w-bf6c6fe8385e.webp",
+          "bytes": 5186,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-10-960w-ae6cc27c7173.webp",
+          "bytes": 16188,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-10-1600w-67eaaa45a6d5.webp",
+          "bytes": 34500,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-10-1920w-b6dd2967c751.webp",
+          "bytes": 45542,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-10-1920w-b6dd2967c751.webp"
+    },
+    "/portfolio-assets/02-topology/topology-11.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "a9abd54cce095ae59ff24637ab0b71507823741263e5b16dcc9408e553faa6da",
+      "sourceBytes": 114134,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-11-480w-9e84046f3efe.webp",
+          "bytes": 7906,
+          "width": 480,
+          "height": 480
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-11-960w-eae3e8a84094.webp",
+          "bytes": 27026,
+          "width": 960,
+          "height": 960
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-11-1600w-3564acbf70ab.webp",
+          "bytes": 60930,
+          "width": 1600,
+          "height": 1600
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-11-1600w-3564acbf70ab.webp"
+    },
+    "/portfolio-assets/02-topology/topology-12.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "0ea1cf9a58cf887c04c38b9ad1fbb7654aa4b7a1e33c610d033c70ba2dd38695",
+      "sourceBytes": 138126,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/02-topology-topology-12-480w-5bf81357a37a.webp",
+          "bytes": 10462,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-12-960w-053ba6f7409b.webp",
+          "bytes": 29428,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-12-1600w-9a8159e70b12.webp",
+          "bytes": 62992,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/02-topology-topology-12-1920w-70af704b9c74.webp",
+          "bytes": 85010,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/02-topology-topology-12-1920w-70af704b9c74.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-01.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "d26c3e3081d721ffb2eda1e7ef1741dfdfe5ecee437882f76e3ad58fcb774aa1",
+      "sourceBytes": 154726,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-01-480w-846321038ca0.webp",
+          "bytes": 6022,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-01-960w-f69e15aec2ec.webp",
+          "bytes": 16326,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-01-1600w-42b648cfab36.webp",
+          "bytes": 34830,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-01-2400w-b53f780cf955.webp",
+          "bytes": 62426,
+          "width": 2400,
+          "height": 1350
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-01-2400w-b53f780cf955.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "27444b163440aeb3e677967585dd487d957de2fe4833e2da54e1720f146758fa",
+      "sourceBytes": 225897,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-02-480w-07c126e00fda.webp",
+          "bytes": 21678,
+          "width": 480,
+          "height": 506
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-02-960w-de4bce4a1ff8.webp",
+          "bytes": 47176,
+          "width": 960,
+          "height": 1013
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-02-1600w-0a1862d04d82.webp",
+          "bytes": 78518,
+          "width": 1600,
+          "height": 1688
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-02-2160w-125f9cdbda09.webp",
+          "bytes": 106546,
+          "width": 2160,
+          "height": 2279
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-02-2160w-125f9cdbda09.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "edf21c80aad5047feed0159b2daacc679fb622f3be5362f6eff3005c57d13d8d",
+      "sourceBytes": 217032,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-03-480w-691795685254.webp",
+          "bytes": 19808,
+          "width": 480,
+          "height": 506
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-03-960w-100cf54ae529.webp",
+          "bytes": 43728,
+          "width": 960,
+          "height": 1013
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-03-1600w-24e23f3ca47f.webp",
+          "bytes": 76698,
+          "width": 1600,
+          "height": 1688
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-03-2160w-5cdc6db9078d.webp",
+          "bytes": 103260,
+          "width": 2160,
+          "height": 2279
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-03-2160w-5cdc6db9078d.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-04.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "021a316be82fed859f35138b0c11d2bef699e9331c723abc1f2d547f0899c660",
+      "sourceBytes": 339306,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-04-480w-336a01a8b0a4.webp",
+          "bytes": 24628,
+          "width": 480,
+          "height": 667
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-04-960w-5efd4f0eb0b6.webp",
+          "bytes": 74532,
+          "width": 960,
+          "height": 1333
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-04-1600w-0444d265655b.webp",
+          "bytes": 169914,
+          "width": 1600,
+          "height": 2222
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-04-1728w-a1f313e47546.webp",
+          "bytes": 202134,
+          "width": 1728,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-04-1728w-a1f313e47546.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-05.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "631b41118040fc2969f5c263caf2d22c300af129b40ba3bba63806f182398766",
+      "sourceBytes": 368185,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-05-480w-c32eccf302c9.webp",
+          "bytes": 24080,
+          "width": 480,
+          "height": 618
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-05-960w-448ffd30607a.webp",
+          "bytes": 82604,
+          "width": 960,
+          "height": 1236
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-05-1600w-0ec47aaedc72.webp",
+          "bytes": 189438,
+          "width": 1600,
+          "height": 2060
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-05-1864w-2e3ea89e0df1.webp",
+          "bytes": 242328,
+          "width": 1864,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-05-1864w-2e3ea89e0df1.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-06.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "1a4598dba3301d9db5f79c1bac9803d10477a6067ddc09d753698f7fb3a4b5f7",
+      "sourceBytes": 204883,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-06-480w-a7432467872c.webp",
+          "bytes": 6892,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-06-960w-de4a54dbc818.webp",
+          "bytes": 19704,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-06-1600w-ab9a0ef1d6fe.webp",
+          "bytes": 43822,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-06-2400w-4e09d2544c22.webp",
+          "bytes": 83282,
+          "width": 2400,
+          "height": 1350
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-06-2400w-4e09d2544c22.webp"
+    },
+    "/portfolio-assets/03-plasticity/plasticity-07.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "d26c3e3081d721ffb2eda1e7ef1741dfdfe5ecee437882f76e3ad58fcb774aa1",
+      "sourceBytes": 154726,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-07-480w-846321038ca0.webp",
+          "bytes": 6022,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-07-960w-f69e15aec2ec.webp",
+          "bytes": 16326,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-07-1600w-42b648cfab36.webp",
+          "bytes": 34830,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/03-plasticity-plasticity-07-2400w-b53f780cf955.webp",
+          "bytes": 62426,
+          "width": 2400,
+          "height": 1350
+        }
+      ],
+      "default": "/optimized-assets/03-plasticity-plasticity-07-2400w-b53f780cf955.webp"
+    },
+    "/portfolio-assets/04-boolean/boolean-01.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "a533cefaf3093c0fc12e0894e7916f124b49ef7486bd0a57e53ae1fbcbccf660",
+      "sourceBytes": 91246,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/04-boolean-boolean-01-480w-d1895328edbc.webp",
+          "bytes": 7684,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-01-960w-1b8f339c67b6.webp",
+          "bytes": 20262,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-01-1600w-8a40aa9766de.webp",
+          "bytes": 37004,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-01-1920w-2cd207c74f1b.webp",
+          "bytes": 46918,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/04-boolean-boolean-01-1920w-2cd207c74f1b.webp"
+    },
+    "/portfolio-assets/04-boolean/boolean-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "dc4499caf17a92222d2c990cccc3cb080cb8d1092d1f4f1121350cb5d594b93f",
+      "sourceBytes": 100354,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/04-boolean-boolean-02-480w-186aba039c3d.webp",
+          "bytes": 8744,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-02-960w-28ddd0d2e863.webp",
+          "bytes": 22996,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-02-1600w-24ab2225d189.webp",
+          "bytes": 41818,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-02-1920w-7a826c04b5ee.webp",
+          "bytes": 55818,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/04-boolean-boolean-02-1920w-7a826c04b5ee.webp"
+    },
+    "/portfolio-assets/04-boolean/boolean-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "f7bac6223e317bef1cbebec495c0f7a2a52bb8a5496c3be3d859bbced8d8ac49",
+      "sourceBytes": 264142,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/04-boolean-boolean-03-480w-f90694998e98.webp",
+          "bytes": 18816,
+          "width": 480,
+          "height": 397
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-03-960w-0ee7d6c95f2f.webp",
+          "bytes": 51824,
+          "width": 960,
+          "height": 794
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-03-1600w-fc28c17a2a62.webp",
+          "bytes": 109242,
+          "width": 1600,
+          "height": 1324
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-03-2234w-2dbe5b5dd422.webp",
+          "bytes": 176734,
+          "width": 2234,
+          "height": 1848
+        }
+      ],
+      "default": "/optimized-assets/04-boolean-boolean-03-2234w-2dbe5b5dd422.webp"
+    },
+    "/portfolio-assets/04-boolean/boolean-04.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "6cce798ae74eac5e6e94f497127375033e6643041544b87bed59b9eb3b0b987e",
+      "sourceBytes": 387201,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/04-boolean-boolean-04-480w-8ee646275add.webp",
+          "bytes": 28900,
+          "width": 480,
+          "height": 397
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-04-960w-207cbf488c17.webp",
+          "bytes": 81072,
+          "width": 960,
+          "height": 794
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-04-1600w-e419cc31185e.webp",
+          "bytes": 174408,
+          "width": 1600,
+          "height": 1324
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-04-2234w-a4363b36e102.webp",
+          "bytes": 288876,
+          "width": 2234,
+          "height": 1848
+        }
+      ],
+      "default": "/optimized-assets/04-boolean-boolean-04-2234w-a4363b36e102.webp"
+    },
+    "/portfolio-assets/04-boolean/boolean-05.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "852430f33c15d7105458cb0ac33fc0ece9e0b1f21f6f56ec81b6aff52c53d57f",
+      "sourceBytes": 151772,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/04-boolean-boolean-05-480w-1603250b1172.webp",
+          "bytes": 7416,
+          "width": 480,
+          "height": 338
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-05-960w-94f883f3f99f.webp",
+          "bytes": 20192,
+          "width": 960,
+          "height": 676
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-05-1600w-1e0bd6772514.webp",
+          "bytes": 42200,
+          "width": 1600,
+          "height": 1126
+        },
+        {
+          "url": "/optimized-assets/04-boolean-boolean-05-2400w-bef4188e6c40.webp",
+          "bytes": 76706,
+          "width": 2400,
+          "height": 1689
+        }
+      ],
+      "default": "/optimized-assets/04-boolean-boolean-05-2400w-bef4188e6c40.webp"
+    },
+    "/portfolio-assets/05-rigging/rigging-01.webp": {
+      "revision": "image-v2",
+      "sourceHash": "1027cfe16b4861c61ea7000454ace407078cc1c930f3ea1954699d80a97d62eb",
+      "sourceBytes": 2400198,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-rigging-rigging-01-480w-21fe55f0aab4.webp",
+          "bytes": 38064,
+          "width": 480,
+          "height": 520
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-01-960w-2a398c9e7e34.webp",
+          "bytes": 102342,
+          "width": 960,
+          "height": 1040
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-01-1600w-6039d140003a.webp",
+          "bytes": 203296,
+          "width": 1600,
+          "height": 1734
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-01-2400w-adbd735c4ff1.webp",
+          "bytes": 328622,
+          "width": 2400,
+          "height": 2600
+        }
+      ],
+      "default": "/optimized-assets/05-rigging-rigging-01-2400w-adbd735c4ff1.webp"
+    },
+    "/portfolio-assets/05-rigging/rigging-02.webp": {
+      "revision": "image-v2",
+      "sourceHash": "dd5be41f78ff51528a1e0740b0138f922f64545f047ac076cd771e6ee93a58e3",
+      "sourceBytes": 8782318,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-rigging-rigging-02-480w-32f2413d1fb0.webp",
+          "bytes": 148110,
+          "width": 480,
+          "height": 520
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-02-960w-d8ec14ed592a.webp",
+          "bytes": 548444,
+          "width": 960,
+          "height": 1040
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-02-1600w-8e3a34fdc4f5.webp",
+          "bytes": 1366104,
+          "width": 1600,
+          "height": 1734
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-02-2400w-d4421db32412.webp",
+          "bytes": 2670400,
+          "width": 2400,
+          "height": 2600
+        }
+      ],
+      "default": "/optimized-assets/05-rigging-rigging-02-2400w-d4421db32412.webp"
+    },
+    "/portfolio-assets/05-rigging/rigging-03.webp": {
+      "revision": "image-v2",
+      "sourceHash": "8a176da0416571575802e19e6d40accc48754f9de7965c61ba78e6b6cc5622ae",
+      "sourceBytes": 5506000,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-rigging-rigging-03-480w-ff5b366fb9c3.webp",
+          "bytes": 26732,
+          "width": 480,
+          "height": 520
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-03-960w-0b0b4783fa7e.webp",
+          "bytes": 81722,
+          "width": 960,
+          "height": 1040
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-03-1600w-7849fd6a4814.webp",
+          "bytes": 176008,
+          "width": 1600,
+          "height": 1734
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-03-2400w-08d82e3af467.webp",
+          "bytes": 297542,
+          "width": 2400,
+          "height": 2600
+        }
+      ],
+      "default": "/optimized-assets/05-rigging-rigging-03-2400w-08d82e3af467.webp"
+    },
+    "/portfolio-assets/05-rigging/rigging-04.webp": {
+      "revision": "image-v2",
+      "sourceHash": "4870fa9f1d2dcbd968834a13f9f0c88a55850b5a9cefbeaf40ee2b3d7d7a8438",
+      "sourceBytes": 2861756,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-rigging-rigging-04-480w-c9d3c63f4f9a.webp",
+          "bytes": 11154,
+          "width": 480,
+          "height": 520
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-04-960w-64b160283457.webp",
+          "bytes": 32456,
+          "width": 960,
+          "height": 1040
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-04-1600w-473cbcbffe7a.webp",
+          "bytes": 67742,
+          "width": 1600,
+          "height": 1734
+        },
+        {
+          "url": "/optimized-assets/05-rigging-rigging-04-2400w-69337a1227de.webp",
+          "bytes": 113420,
+          "width": 2400,
+          "height": 2600
+        }
+      ],
+      "default": "/optimized-assets/05-rigging-rigging-04-2400w-69337a1227de.webp"
+    },
+    "/portfolio-assets/06-early/early-01.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "895b6404e9232ccd0f196a74c92c253e9311317a1c76753c5d30d22d4f099eeb",
+      "sourceBytes": 138789,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/06-early-early-01-480w-a798b9b01ab8.webp",
+          "bytes": 14370,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/06-early-early-01-960w-dc871719a8b4.webp",
+          "bytes": 45882,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/06-early-early-01-1600w-6e887025690b.webp",
+          "bytes": 104116,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/06-early-early-01-1706w-d487dfaf3fb5.webp",
+          "bytes": 111720,
+          "width": 1706,
+          "height": 960
+        }
+      ],
+      "default": "/optimized-assets/06-early-early-01-1706w-d487dfaf3fb5.webp"
+    },
+    "/portfolio-assets/06-early/early-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "5d862932147295259a00e54cecffdf1467e02b639f9ab810f75d17b3113b42f0",
+      "sourceBytes": 121906,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/06-early-early-02-480w-7265d0e960e4.webp",
+          "bytes": 11658,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/06-early-early-02-960w-cf43e4b621cc.webp",
+          "bytes": 37668,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/06-early-early-02-1600w-5779d4908ac8.webp",
+          "bytes": 83698,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/06-early-early-02-1706w-c287586f5497.webp",
+          "bytes": 89746,
+          "width": 1706,
+          "height": 960
+        }
+      ],
+      "default": "/optimized-assets/06-early-early-02-1706w-c287586f5497.webp"
+    },
+    "/portfolio-assets/06-early/early-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "5d4e981441ef1c79612da4156f1dea40284a041b2f7617a3a3a7355561b14db9",
+      "sourceBytes": 643686,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/06-early-early-03-480w-eebce1a744ae.webp",
+          "bytes": 38394,
+          "width": 480,
+          "height": 201
+        },
+        {
+          "url": "/optimized-assets/06-early-early-03-960w-78ecab18e89a.webp",
+          "bytes": 146252,
+          "width": 960,
+          "height": 402
+        },
+        {
+          "url": "/optimized-assets/06-early-early-03-1600w-e81bbb94045e.webp",
+          "bytes": 352710,
+          "width": 1600,
+          "height": 669
+        },
+        {
+          "url": "/optimized-assets/06-early-early-03-2400w-3bbeeda68020.webp",
+          "bytes": 664668,
+          "width": 2400,
+          "height": 1004
+        }
+      ],
+      "default": "/optimized-assets/06-early-early-03-2400w-3bbeeda68020.webp"
+    },
+    "/portfolio-assets/06-early/early-04.webp": {
+      "revision": "image-v2",
+      "sourceHash": "b95c46cb9cd3591aea84c7f04e2578d84d8f2d5e71c11258d8e8db213f0fcbe7",
+      "sourceBytes": 75708,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/06-early-early-04-480w-b274633d45d7.webp",
+          "bytes": 9586,
+          "width": 480,
+          "height": 480
+        },
+        {
+          "url": "/optimized-assets/06-early-early-04-960w-68453ec48223.webp",
+          "bytes": 23550,
+          "width": 960,
+          "height": 960
+        },
+        {
+          "url": "/optimized-assets/06-early-early-04-1600w-4cfa580fb075.webp",
+          "bytes": 46214,
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "url": "/optimized-assets/06-early-early-04-2400w-9910b6128c33.webp",
+          "bytes": 74116,
+          "width": 2400,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/06-early-early-04-2400w-9910b6128c33.webp"
+    },
+    "/portfolio-assets/06-early/early-05.webp": {
+      "revision": "image-v2",
+      "sourceHash": "4de97e2a7151795da575c0e4a4995622a9a471ba49ae41c2571ba08f58ec18d1",
+      "sourceBytes": 69314,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/06-early-early-05-480w-be48f8e8bafc.webp",
+          "bytes": 9554,
+          "width": 480,
+          "height": 471
+        },
+        {
+          "url": "/optimized-assets/06-early-early-05-960w-5b3c13a5bc9a.webp",
+          "bytes": 24610,
+          "width": 960,
+          "height": 942
+        },
+        {
+          "url": "/optimized-assets/06-early-early-05-1600w-3b2fd1d7ea61.webp",
+          "bytes": 50226,
+          "width": 1600,
+          "height": 1570
+        },
+        {
+          "url": "/optimized-assets/06-early-early-05-2160w-cf1d480cbfb4.webp",
+          "bytes": 67632,
+          "width": 2160,
+          "height": 2120
+        }
+      ],
+      "default": "/optimized-assets/06-early-early-05-2160w-cf1d480cbfb4.webp"
+    },
+    "/portfolio-assets/06-early/early-06.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "f38cf05acada756c28539760b8b71ba4a3aefb5116f015000038d34e171a4cc8",
+      "sourceBytes": 151987,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/06-early-early-06-480w-6ac739533744.webp",
+          "bytes": 6714,
+          "width": 480,
+          "height": 191
+        },
+        {
+          "url": "/optimized-assets/06-early-early-06-960w-5e1e518d3734.webp",
+          "bytes": 21308,
+          "width": 960,
+          "height": 383
+        },
+        {
+          "url": "/optimized-assets/06-early-early-06-1600w-988f6c190e9a.webp",
+          "bytes": 45914,
+          "width": 1600,
+          "height": 639
+        },
+        {
+          "url": "/optimized-assets/06-early-early-06-2400w-69945b930303.webp",
+          "bytes": 85570,
+          "width": 2400,
+          "height": 958
+        }
+      ],
+      "default": "/optimized-assets/06-early-early-06-2400w-69945b930303.webp"
+    },
+    "/portfolio-assets/07-other/other-01.webp": {
+      "revision": "image-v2",
+      "sourceHash": "ce159462e7d27b6251789f5844d8c5413130db2944fd5fda53c50c99afd291f2",
+      "sourceBytes": 190542,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-01-480w-df8a20ee85bc.webp",
+          "bytes": 24292,
+          "width": 480,
+          "height": 480
+        },
+        {
+          "url": "/optimized-assets/07-other-other-01-960w-e5b09c6118ef.webp",
+          "bytes": 62920,
+          "width": 960,
+          "height": 960
+        },
+        {
+          "url": "/optimized-assets/07-other-other-01-1600w-26dfb53a94d9.webp",
+          "bytes": 119060,
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "url": "/optimized-assets/07-other-other-01-2400w-ce159462e7d2.webp",
+          "bytes": 190542,
+          "width": 2400,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-01-2400w-ce159462e7d2.webp"
+    },
+    "/portfolio-assets/07-other/other-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "ba901ef3110d6fdbd03756d9826b9cdbeb56ff4a8580312206631d8613f86c0d",
+      "sourceBytes": 235009,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-02-480w-8cd045c29f85.webp",
+          "bytes": 24314,
+          "width": 480,
+          "height": 385
+        },
+        {
+          "url": "/optimized-assets/07-other-other-02-960w-2eacada5f744.webp",
+          "bytes": 67080,
+          "width": 960,
+          "height": 770
+        },
+        {
+          "url": "/optimized-assets/07-other-other-02-1600w-436554b5dccb.webp",
+          "bytes": 128356,
+          "width": 1600,
+          "height": 1283
+        },
+        {
+          "url": "/optimized-assets/07-other-other-02-1920w-80b6a59713f2.webp",
+          "bytes": 161452,
+          "width": 1920,
+          "height": 1540
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-02-1920w-80b6a59713f2.webp"
+    },
+    "/portfolio-assets/07-other/other-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "1db4cb587a23a1d766a04a8244cf58723c81068b8a8de288d40f60df0cb7bf77",
+      "sourceBytes": 250933,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-03-480w-82830f3cdfd8.webp",
+          "bytes": 14766,
+          "width": 480,
+          "height": 554
+        },
+        {
+          "url": "/optimized-assets/07-other-other-03-960w-4a5bbf774f16.webp",
+          "bytes": 51048,
+          "width": 960,
+          "height": 1107
+        },
+        {
+          "url": "/optimized-assets/07-other-other-03-1600w-6f060b8d2f6b.webp",
+          "bytes": 139676,
+          "width": 1600,
+          "height": 1845
+        },
+        {
+          "url": "/optimized-assets/07-other-other-03-1825w-23c089ccaf34.webp",
+          "bytes": 185010,
+          "width": 1825,
+          "height": 2105
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-03-1825w-23c089ccaf34.webp"
+    },
+    "/portfolio-assets/07-other/other-04.webp": {
+      "revision": "image-v2",
+      "sourceHash": "4028810ca599f2c71dc2f4ea73cc5eca64dbc30aeea8ddc4235bdcbf8aed436b",
+      "sourceBytes": 37762,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-04-480w-9b023eeca64b.webp",
+          "bytes": 16266,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/07-other-other-04-960w-d89725404e7f.webp",
+          "bytes": 37488,
+          "width": 960,
+          "height": 540
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-04-960w-d89725404e7f.webp"
+    },
+    "/portfolio-assets/07-other/other-05.webp": {
+      "revision": "image-v2",
+      "sourceHash": "b5d62632a81445c19d43cc843c27a55967d329cefd611efdded76ffaa4bb8033",
+      "sourceBytes": 43590,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-05-480w-5d541f66613f.webp",
+          "bytes": 6972,
+          "width": 480,
+          "height": 419
+        },
+        {
+          "url": "/optimized-assets/07-other-other-05-960w-c46099c8a26f.webp",
+          "bytes": 16608,
+          "width": 960,
+          "height": 838
+        },
+        {
+          "url": "/optimized-assets/07-other-other-05-1600w-e7aee2877f89.webp",
+          "bytes": 32510,
+          "width": 1600,
+          "height": 1396
+        },
+        {
+          "url": "/optimized-assets/07-other-other-05-2160w-b5d62632a814.webp",
+          "bytes": 43590,
+          "width": 2160,
+          "height": 1885
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-05-2160w-b5d62632a814.webp"
+    },
+    "/portfolio-assets/07-other/other-06.webp": {
+      "revision": "image-v2",
+      "sourceHash": "b4b295f50ba35b7fb65f86826839022df8486cd4a355df15948e078b50110d17",
+      "sourceBytes": 17044,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-06-480w-70ee2ee6e7c2.webp",
+          "bytes": 6934,
+          "width": 480,
+          "height": 480
+        },
+        {
+          "url": "/optimized-assets/07-other-other-06-960w-82fb522c4c77.webp",
+          "bytes": 15006,
+          "width": 960,
+          "height": 960
+        },
+        {
+          "url": "/optimized-assets/07-other-other-06-1080w-b4b295f50ba3.webp",
+          "bytes": 17044,
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-06-1080w-b4b295f50ba3.webp"
+    },
+    "/portfolio-assets/07-other/other-07.webp": {
+      "revision": "image-v2",
+      "sourceHash": "a27d439f11475991da8a356ff89f4ec3cb428575ffb1d3a757a89b0d7e5b0123",
+      "sourceBytes": 67564,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-07-480w-d604c149e5cc.webp",
+          "bytes": 14022,
+          "width": 480,
+          "height": 599
+        },
+        {
+          "url": "/optimized-assets/07-other-other-07-960w-3b340a3b10b8.webp",
+          "bytes": 32558,
+          "width": 960,
+          "height": 1198
+        },
+        {
+          "url": "/optimized-assets/07-other-other-07-1600w-26a0d288f8c3.webp",
+          "bytes": 58334,
+          "width": 1600,
+          "height": 1996
+        },
+        {
+          "url": "/optimized-assets/07-other-other-07-1924w-a27d439f1147.webp",
+          "bytes": 67564,
+          "width": 1924,
+          "height": 2400
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-07-1924w-a27d439f1147.webp"
+    },
+    "/portfolio-assets/07-other/other-08.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "e493f979c41ca2f5b7409b29b5b958d1627b8364af3c9c1bbaa05930a19bb398",
+      "sourceBytes": 331058,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/07-other-other-08-480w-c5a910e8d01d.webp",
+          "bytes": 22450,
+          "width": 480,
+          "height": 339
+        },
+        {
+          "url": "/optimized-assets/07-other-other-08-960w-e3babb94c587.webp",
+          "bytes": 65704,
+          "width": 960,
+          "height": 679
+        },
+        {
+          "url": "/optimized-assets/07-other-other-08-1600w-c363c19a2ada.webp",
+          "bytes": 133754,
+          "width": 1600,
+          "height": 1131
+        },
+        {
+          "url": "/optimized-assets/07-other-other-08-2400w-22b593141edd.webp",
+          "bytes": 226310,
+          "width": 2400,
+          "height": 1697
+        }
+      ],
+      "default": "/optimized-assets/07-other-other-08-2400w-22b593141edd.webp"
+    },
+    "/portfolio-assets/08-spin/spin-01.webp": {
+      "revision": "image-v2",
+      "sourceHash": "7e67f3373f20d83bfb67406046aa5cefd5b3d73626bcfba7347ca956e2f0cd88",
+      "sourceBytes": 1414710,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 28,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-01-160w-0366499c2c51.webp",
+          "bytes": 277964,
+          "width": 160,
+          "height": 193
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-01-320w-b75b50a485e0.webp",
+          "bytes": 675770,
+          "width": 320,
+          "height": 385
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-01-480w-6a35c97519b6.webp",
+          "bytes": 1117076,
+          "width": 480,
+          "height": 578
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-01-598w-b88411d3e36b.webp",
+          "bytes": 1390196,
+          "width": 598,
+          "height": 720
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-01-598w-b88411d3e36b.webp"
+    },
+    "/portfolio-assets/08-spin/spin-02.webp": {
+      "revision": "image-v2",
+      "sourceHash": "c67194bbac7fa40bbc79452e3e68c7553363abbf571b9ed65d07352788e3bcf2",
+      "sourceBytes": 2271092,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 32,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-02-160w-3072d0d85727.webp",
+          "bytes": 431622,
+          "width": 160,
+          "height": 195
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-02-320w-6da02118a3bf.webp",
+          "bytes": 1087278,
+          "width": 320,
+          "height": 389
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-02-480w-40d3ef180f03.webp",
+          "bytes": 1854422,
+          "width": 480,
+          "height": 584
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-02-592w-a10ff6bbe0d1.webp",
+          "bytes": 2227896,
+          "width": 592,
+          "height": 720
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-02-592w-a10ff6bbe0d1.webp"
+    },
+    "/portfolio-assets/08-spin/spin-03.webp": {
+      "revision": "image-v2",
+      "sourceHash": "b3d8b9f33315b7d2bbb32e5c13dfa8b51517f048c4756fc53c65c55fcdb0c29c",
+      "sourceBytes": 229618,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 30,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-03-172w-aac0335173fd.webp",
+          "bytes": 226612,
+          "width": 172,
+          "height": 608
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-03-172w-aac0335173fd.webp"
+    },
+    "/portfolio-assets/08-spin/spin-04.webp": {
+      "revision": "image-v2",
+      "sourceHash": "ad4eab40d32b9d16d5b0806765c483c78bd1032ac9cd20d983449eab6664fce0",
+      "sourceBytes": 910516,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 22,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-04-160w-0656545729e8.webp",
+          "bytes": 146576,
+          "width": 160,
+          "height": 197
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-04-320w-191acb1a2642.webp",
+          "bytes": 386700,
+          "width": 320,
+          "height": 393
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-04-480w-7032b41f59dc.webp",
+          "bytes": 718670,
+          "width": 480,
+          "height": 590
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-04-586w-ad4eab40d32b.webp",
+          "bytes": 910516,
+          "width": 586,
+          "height": 720
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-04-586w-ad4eab40d32b.webp"
+    },
+    "/portfolio-assets/08-spin/spin-05.webp": {
+      "revision": "image-v2",
+      "sourceHash": "8b2a1f298c1d2ae84d02da769ae0262d2f826953a1643e435aad634248e917a6",
+      "sourceBytes": 2299748,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 204,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-05-160w-57d109bdbcd6.webp",
+          "bytes": 514552,
+          "width": 160,
+          "height": 90
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-05-320w-689aa086e26d.webp",
+          "bytes": 1303470,
+          "width": 320,
+          "height": 180
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-05-640w-8b2a1f298c1d.webp",
+          "bytes": 2299748,
+          "width": 640,
+          "height": 360
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-05-640w-8b2a1f298c1d.webp",
+      "motion": {
+        "url": "/optimized-assets/08-spin-spin-05-00925b93b6da.mp4",
+        "bytes": 666732,
+        "poster": "/optimized-assets/08-spin-spin-05-poster-70f88ae995e9.webp",
+        "posterBytes": 18484,
+        "width": 640,
+        "height": 360,
+        "frames": 204,
+        "duration": 16.32
+      }
+    },
+    "/portfolio-assets/08-spin/spin-06.webp": {
+      "revision": "image-v2",
+      "sourceHash": "b3d3285207cdb746df94323c55f2ff48a0579a2b1d8df5cfc8194533212f3aa9",
+      "sourceBytes": 4827410,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 492,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-06-160w-28c12bf3f5e5.webp",
+          "bytes": 1058594,
+          "width": 160,
+          "height": 90
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-06-320w-d2e6b9e89cbe.webp",
+          "bytes": 2683264,
+          "width": 320,
+          "height": 180
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-06-480w-870c4a5298d7.webp",
+          "bytes": 4722306,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-06-640w-b3d3285207cd.webp",
+          "bytes": 4827410,
+          "width": 640,
+          "height": 360
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-06-640w-b3d3285207cd.webp",
+      "motion": {
+        "url": "/optimized-assets/08-spin-spin-06-6da6d83537dc.mp4",
+        "bytes": 1989820,
+        "poster": "/optimized-assets/08-spin-spin-06-poster-7f3923f5ad7f.webp",
+        "posterBytes": 18252,
+        "width": 640,
+        "height": 360,
+        "frames": 492,
+        "duration": 39.36
+      }
+    },
+    "/portfolio-assets/08-spin/spin-07.webp": {
+      "revision": "image-v2",
+      "sourceHash": "ba2a9b77ac9918b263c73cbbfca3921e522c05fd0947c35387d8dad038e5c0b9",
+      "sourceBytes": 499034,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 49,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-07-160w-df40bc70df00.webp",
+          "bytes": 69744,
+          "width": 160,
+          "height": 90
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-07-320w-21f99bc37e96.webp",
+          "bytes": 193802,
+          "width": 320,
+          "height": 180
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-07-480w-6791a1a8c8ca.webp",
+          "bytes": 354120,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-07-720w-ba2a9b77ac99.webp",
+          "bytes": 499034,
+          "width": 720,
+          "height": 405
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-07-720w-ba2a9b77ac99.webp"
+    },
+    "/portfolio-assets/08-spin/spin-08.webp": {
+      "revision": "image-v2",
+      "sourceHash": "9f6b6b055851adee999120d0e8205bd200785923f8d411937834de0714b61d2d",
+      "sourceBytes": 1583494,
+      "kind": "image",
+      "animated": true,
+      "alpha": true,
+      "frames": 299,
+      "variants": [
+        {
+          "url": "/optimized-assets/08-spin-spin-08-160w-ad089d2039d6.webp",
+          "bytes": 374090,
+          "width": 160,
+          "height": 90
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-08-320w-3421226aedaa.webp",
+          "bytes": 916928,
+          "width": 320,
+          "height": 180
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-08-480w-4d24e0af42c7.webp",
+          "bytes": 1489102,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/08-spin-spin-08-640w-9f6b6b055851.webp",
+          "bytes": 1583494,
+          "width": 640,
+          "height": 360
+        }
+      ],
+      "default": "/optimized-assets/08-spin-spin-08-640w-9f6b6b055851.webp"
+    },
+    "/portfolio-assets/09-profile/avatar-original.png": {
+      "revision": "image-v2",
+      "sourceHash": "730c617cdef21bff46f72e7ed16f4cf002c82b9bcbda504de02f7cf3d51e0d7c",
+      "sourceBytes": 2056404,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/09-profile-avatar-original-480w-b5dd12d55699.webp",
+          "bytes": 44696,
+          "width": 480,
+          "height": 871
+        },
+        {
+          "url": "/optimized-assets/09-profile-avatar-original-931w-d359e0a685e6.webp",
+          "bytes": 132238,
+          "width": 931,
+          "height": 1690
+        }
+      ],
+      "default": "/optimized-assets/09-profile-avatar-original-931w-d359e0a685e6.webp"
+    },
+    "/portfolio-assets/09-profile/avatar-poses-v2.png": {
+      "revision": "image-v2",
+      "sourceHash": "d916abef4b3bf509629e28e67bf0fc2dcd2e74268dcf1ea5acd4f75896a64767",
+      "sourceBytes": 1867534,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/09-profile-avatar-poses-v2-1254w-75a604bd1475.webp",
+          "bytes": 200232,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "default": "/optimized-assets/09-profile-avatar-poses-v2-1254w-75a604bd1475.webp"
+    },
+    "/portfolio-assets/10-brand/brand-app-icon.png": {
+      "revision": "image-v2",
+      "sourceHash": "fdb1705e767b461d6e9768953bb43d7d98710c051899139330f75272a3e7f37d",
+      "sourceBytes": 263770,
+      "kind": "image",
+      "animated": false,
+      "alpha": true,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/10-brand-brand-app-icon-512w-0671dcede879.webp",
+          "bytes": 108948,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "default": "/optimized-assets/10-brand-brand-app-icon-512w-0671dcede879.webp"
+    },
+    "/portfolio-assets/11-software/software-icons.png": {
+      "revision": "image-v2",
+      "sourceHash": "dcd888615b72b374eb8e0eb47b6a8fec892b4d32f6cd53d96b31f0826413928e",
+      "sourceBytes": 2089993,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/11-software-software-icons-1536w-6e3abb05398b.webp",
+          "bytes": 119222,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "default": "/optimized-assets/11-software-software-icons-1536w-6e3abb05398b.webp"
+    },
+    "/portfolio-assets/12-models/pistol-blend-baked.glb": {
+      "sourceHash": "9e7f086342d74b2ec27e2f6f276f410300fb2982c3abeff2041ce5cde692d46e",
+      "sourceBytes": 21387720,
+      "kind": "model",
+      "variants": [
+        {
+          "url": "/optimized-assets/12-models-pistol-blend-baked-1024-c24e3451caea.glb",
+          "bytes": 3877544,
+          "maxTexture": 1024
+        },
+        {
+          "url": "/optimized-assets/12-models-pistol-blend-baked-2048-9d7fc2423420.glb",
+          "bytes": 4970852,
+          "maxTexture": 2048
+        }
+      ],
+      "mobile": "/optimized-assets/12-models-pistol-blend-baked-1024-c24e3451caea.glb",
+      "default": "/optimized-assets/12-models-pistol-blend-baked-2048-9d7fc2423420.glb"
+    }
+  }
+}

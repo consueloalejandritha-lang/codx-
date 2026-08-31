@@ -1,2 +1,3 @@
 allowBuilds:
   esbuild: true
+  sharp: false # Use the packaged native binaries; do not execute install scripts.

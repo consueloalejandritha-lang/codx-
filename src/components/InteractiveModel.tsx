@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent, PointerEvent } from 'react';
 import type { ModelController, ModelStatus } from './modelViewer';
 import { clampUnit } from './modelMotion';
+import { createModelTouch } from './modelTouch';
+import { assetUrl, IMAGE_SIZES } from '../media';
+import OptimizedImage from './OptimizedImage';
 
 type Props = { src: string; poster: string; title: string };
 
@@ -9,7 +12,7 @@ export default function InteractiveModel({ src, poster, title }: Props) {
   const regionRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const controllerRef = useRef<ModelController>();
-  const touchRef = useRef<{ id: number; x: number; y: number }>();
+  const touchRef = useRef(createModelTouch());
   const keyboardRef = useRef({ x: 0, y: 0 });
   const [status, setStatus] = useState<ModelStatus>('loading');
 
@@ -28,7 +31,8 @@ export default function InteractiveModel({ src, poster, title }: Props) {
       started = true;
       void import('./modelViewer').then(({ createModelViewer }) => {
         if (cancelled) return;
-        controllerRef.current = createModelViewer(stage, src, (next) => {
+        const compact = window.matchMedia('(max-width: 1024px)').matches;
+        controllerRef.current = createModelViewer(stage, assetUrl(src, compact), (next) => {
           if (!cancelled) setStatus(next);
         });
         controllerRef.current.setVisible(inView);
@@ -44,17 +48,18 @@ export default function InteractiveModel({ src, poster, title }: Props) {
   }, [src]);
 
   const reset = () => {
-    touchRef.current = undefined;
+    touchRef.current.reset();
     keyboardRef.current = { x: 0, y: 0 };
     controllerRef.current?.reset();
   };
   const move = (event: PointerEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
-    if (event.pointerType === 'mouse' || event.pointerType === 'pen') {
+    if ((event.pointerType === 'mouse' || event.pointerType === 'pen') && !touchRef.current.active()) {
       controllerRef.current?.setPointer((event.clientX - rect.left) / rect.width * 2 - 1, (event.clientY - rect.top) / rect.height * 2 - 1);
-    } else if (touchRef.current?.id === event.pointerId) {
-      controllerRef.current?.setPointer((event.clientX - touchRef.current.x) / rect.width * 3, (event.clientY - touchRef.current.y) / rect.height * 2);
+    } else if (event.pointerType === 'touch') {
+      const target = touchRef.current.move(event.pointerId, event.clientX, event.clientY, rect.width, rect.height);
+      if (target) { event.preventDefault(); controllerRef.current?.setPointer(target.x, target.y); }
     }
   };
   const handleKey = (event: KeyboardEvent<HTMLDivElement>) => {
@@ -76,28 +81,33 @@ export default function InteractiveModel({ src, poster, title }: Props) {
       ref={regionRef}
       className={`interactive-model is-${status}`}
       role="group"
-      aria-label={`${title} 3D 模型；鼠标移动或触屏横向拖动可转动，离开或松手后回正。键盘方向键旋转，Escape 回正。`}
+      aria-label={`${title} 3D 模型；鼠标移动或触屏拖动可转动，离开或松手后回正。键盘方向键旋转，Escape 回正。`}
       tabIndex={0}
       onPointerMove={move}
       onPointerDown={(event) => {
-        if (event.pointerType !== 'touch' || !event.isPrimary) return;
-        touchRef.current = { id: event.pointerId, x: event.clientX, y: event.clientY };
+        if (event.pointerType !== 'touch' || status !== 'ready') return;
+        if (!touchRef.current.begin(event.pointerId, event.clientX, event.clientY, event.isPrimary)) return;
+        event.preventDefault();
         event.currentTarget.setPointerCapture(event.pointerId);
       }}
-      onPointerUp={(event) => { if (event.pointerType === 'touch') reset(); }}
-      onPointerCancel={reset}
-      onLostPointerCapture={reset}
-      onPointerLeave={reset}
+      onPointerUp={(event) => {
+        if (!touchRef.current.end(event.pointerId)) return;
+        if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+        reset();
+      }}
+      onPointerCancel={(event) => { if (touchRef.current.end(event.pointerId)) reset(); }}
+      onLostPointerCapture={(event) => { if (touchRef.current.end(event.pointerId)) reset(); }}
+      onPointerLeave={(event) => { if (event.pointerType !== 'touch' && !touchRef.current.active()) reset(); }}
       onKeyDown={handleKey}
       onBlur={reset}
     >
-      <img className="model-poster" src={poster} alt={`${title}静态预览`} loading="lazy" decoding="async" />
+      <OptimizedImage className="model-poster" src={poster} sizes={IMAGE_SIZES.full} alt={`${title}静态预览`} loading="lazy" decoding="async" draggable={false} />
       <div ref={stageRef} className="model-stage" />
       <span className="model-badge" aria-hidden="true">3D / INTERACTIVE</span>
       <p className="model-status" role="status">
         {status === 'loading' && '正在加载 3D 模型…'}
         {status === 'error' && '3D 暂不可用 · 当前显示作品图片'}
-        {status === 'ready' && <><span className="model-mouse-hint">移动鼠标探索 · 移开回正</span><span className="model-touch-hint">左右拖动探索 · 松手回正</span></>}
+        {status === 'ready' && <><span className="model-mouse-hint">移动鼠标探索 · 移开回正</span><span className="model-touch-hint">拖动模型探索 · 松手回正</span></>}
       </p>
     </div>
   );

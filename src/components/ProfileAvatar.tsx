@@ -3,9 +3,10 @@ import type { CSSProperties } from 'react';
 import { AVATAR_ENTRANCE_MS, AVATAR_GREETING_MS, AVATAR_POSES, AVATAR_VISIBILITY_THRESHOLD, avatarVisit } from './avatarMotion';
 import type { AvatarPhase } from './avatarMotion';
 import './ProfileAvatar.css';
+import { assetUrl } from '../media';
 
-const AVATAR = '/portfolio-assets/09-profile/avatar-original.png';
-const POSES = '/portfolio-assets/09-profile/avatar-poses-v2.png';
+const AVATAR = assetUrl('/portfolio-assets/09-profile/avatar-original.png');
+const POSES = assetUrl('/portfolio-assets/09-profile/avatar-poses-v2.png');
 
 // Display-only crops: preserve the source PNG and align the feet to y=570.
 // The first row is taller than half the atlas; an equal grid would cut its boots.

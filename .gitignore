@@ -34,6 +34,7 @@ yarn-error.log*
 # Machine-local backups, conversion tools and compiler caches
 /.local-backups/
 /scripts/_vendor/
+/public/optimized-assets/.*.tmp.*
 *.tsbuildinfo
 __pycache__/
 *.py[cod]

@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { loadModule } from './load_source.mjs';
 
-const root = path.resolve('public');
+const built = process.argv.includes('--dist');
+const root = path.resolve(built ? 'dist' : 'public');
 const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
   const filename = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(filename) : [filename];
@@ -16,10 +17,19 @@ const collect = value => {
 };
 collect(await loadModule('src/data/portfolio.ts'));
 collect(await loadModule('src/data/software.ts'));
-for (const filename of walk('src')) {
+for (const filename of walk('src').filter(file => !file.includes(`${path.sep}generated${path.sep}`))) {
   for (const match of fs.readFileSync(filename, 'utf8').matchAll(/\/portfolio-assets\/[^\s'"`)]+\.(?:png|jpe?g|webp|gif|webm|mp4|glb)/g)) urls.add(match[0]);
 }
-['draco_decoder.js', 'draco_wasm_wrapper.js', 'draco_decoder.wasm'].forEach(name => urls.add(`/vendor/draco/${name}`));
+const manifest = JSON.parse(fs.readFileSync('src/generated/media-manifest.json', 'utf8'));
+assert.deepEqual([...urls].sort(), Object.keys(manifest.entries).sort(), 'Manifest must match referenced source media');
+const runtimeUrls = new Set(['/vendor/draco/draco_decoder.js', '/vendor/draco/draco_wasm_wrapper.js', '/vendor/draco/draco_decoder.wasm']);
+for (const entry of Object.values(manifest.entries)) {
+  entry.variants.forEach(v => runtimeUrls.add(v.url));
+  if (entry.motion) { runtimeUrls.add(entry.motion.url); runtimeUrls.add(entry.motion.poster); }
+}
+const sourceUrls = new Set(urls);
+if (built) urls.clear();
+runtimeUrls.forEach(url => urls.add(url));
 const base = process.argv.find(value => value.startsWith('--url='))?.slice(6);
 let bytes = 0;
 for (const url of urls) {
@@ -28,15 +38,19 @@ for (const url of urls) {
   assert.ok(fs.existsSync(filename), `Missing asset: ${url}`);
   const size = fs.statSync(filename).size;
   assert.ok(size > 0, `Empty asset: ${url}`);
-  bytes += size;
-  if (base) {
+  if (runtimeUrls.has(url)) bytes += size;
+  if (base && runtimeUrls.has(url)) {
     const response = await fetch(new URL(url, base), { method: 'HEAD' });
     assert.equal(response.status, 200, `HTTP ${response.status}: ${url}`);
     assert.ok(!response.headers.get('content-type')?.includes('text/html'), `HTML fallback instead of media: ${url}`);
     assert.equal(Number(response.headers.get('content-length')), size, `Unexpected asset size: ${url}`);
   }
 }
+if (built) {
+  for (const url of sourceUrls) assert.ok(!fs.existsSync(path.resolve(root, `.${url}`)), `Original unexpectedly shipped: ${url}`);
+  assert.equal(fs.readFileSync(path.join(root, '_headers'), 'utf8'), fs.readFileSync('public/_headers', 'utf8'));
+}
 const unused = walk(root).filter(filename => /\.(png|jpe?g|webp|gif|mp4|webm|glb|svg)$/i.test(filename))
   .filter(filename => !urls.has(`/${path.relative(root, filename).split(path.sep).join('/')}`));
-console.log(JSON.stringify({ assets: urls.size, totalMiB: +(bytes / 1048576).toFixed(2), unusedMedia: unused.map(filename => path.relative(root, filename)), httpChecked: Boolean(base) }, null, 2));
+console.log(JSON.stringify({ sourceAssets: sourceUrls.size, runtimeVariants: runtimeUrls.size, allVariantMiB: +(bytes / 1048576).toFixed(2), unusedMedia: unused.map(filename => path.relative(root, filename)), httpChecked: Boolean(base), built }, null, 2));
 assert.equal(unused.length, 0, 'Unreferenced public media: review before uploading');

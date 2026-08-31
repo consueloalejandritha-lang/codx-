@@ -23,6 +23,9 @@ import InteractiveModel from './components/InteractiveModel';
 import ProfileAvatar from './components/ProfileAvatar';
 import HeroMedia from './components/HeroMedia';
 import SoftwareTools from './components/SoftwareTools';
+import OptimizedImage from './components/OptimizedImage';
+import MotionArtwork from './components/MotionArtwork';
+import { assetUrl, IMAGE_SIZES } from './media';
 
 type SectionLabelProps = {
   number: string;
@@ -61,7 +64,7 @@ function Hero() {
       <header className="site-header shell">
         <a className="brand" href="#home" aria-label="返回首页">
           <span className="brand-mark">
-            <img src="/portfolio-assets/10-brand/brand-app-icon.png" alt="" aria-hidden="true" />
+            <img src={assetUrl('/portfolio-assets/10-brand/brand-app-icon.png')} alt="" aria-hidden="true" />
           </span>
           <span className="brand-copy">
             3D ARTIST
@@ -199,10 +202,11 @@ function FeaturedProjects() {
             className={`featured-card featured-${index + 1}`}
             key={project.number}
           >
-            <img
+            <OptimizedImage
               src={project.image}
               alt={`${project.title}项目`}
-              loading={index === 0 ? 'eager' : 'lazy'}
+              sizes={index === 0 ? IMAGE_SIZES.featuredMain : IMAGE_SIZES.featuredSide}
+              loading="lazy"
               decoding="async"
             />
             <div className="featured-overlay">
@@ -277,14 +281,15 @@ function PortfolioArchive() {
                 </header>
 
                 <div className="series-grid">
-                  {items.map((item) => {
+                  {items.map((item, seriesItemIndex) => {
                     const itemIndex = category.items.findIndex(({ id }) => id === item.id);
 
                     return (
                       <article className={`work-card aspect-${item.aspect}${item.model ? ' work-model-card' : ''}`} key={item.id}>
                         <div className="work-media">
-                          {item.model ? <InteractiveModel src={item.model} poster={item.image} title={item.title} /> : <img
+                          {item.model ? <InteractiveModel src={item.model} poster={item.image} title={item.title} /> : <OptimizedImage
                             src={item.image}
+                            sizes={items.length % 2 === 1 && seriesItemIndex === items.length - 1 ? IMAGE_SIZES.full : IMAGE_SIZES.pair}
                             alt={item.title}
                             loading="lazy"
                             decoding="async"
@@ -329,7 +334,7 @@ function PortfolioArchive() {
           {spinItems.map((item, index) => (
             <article className="spin-card" key={item.id}>
               <div>
-                <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
+                <MotionArtwork src={item.image} alt={item.title} />
                 <span>{String(index + 1).padStart(2, '0')}</span>
               </div>
               <p>{item.title} · TURNTABLE</p>
@@ -401,7 +406,7 @@ function Rigging() {
         {riggingItems.map((item, index) => (
           <article className="rigging-card" key={item.id}>
             <div className="rigging-media">
-              <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
+              <OptimizedImage src={item.image} sizes={IMAGE_SIZES.pair} alt={item.title} loading="lazy" decoding="async" />
               <span>{String(index + 1).padStart(2, '0')} / 04</span>
             </div>
             <footer>

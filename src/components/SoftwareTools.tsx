@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { softwareIconSheet, softwareTools } from '../data/software';
 import { attachSoftwareLoop } from './softwareLoop';
+import { assetUrl } from '../media';
 
 function ToolIcons() {
   return softwareTools.map(tool => (
     <li key={tool.id} title={tool.name}>
       <svg className="software-icon" viewBox={tool.crop.join(' ')} preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <image href={softwareIconSheet} width="1536" height="1024" />
+        <image href={assetUrl(softwareIconSheet)} width="1536" height="1024" />
       </svg>
       <span>{tool.name}</span>
     </li>

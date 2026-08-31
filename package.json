@@ -4,11 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "node scripts/prepare_media.mjs && vite",
+    "build": "node scripts/prepare_media.mjs --check && node scripts/check_assets.mjs && tsc -b && vite build",
+    "media": "node scripts/prepare_media.mjs",
     "preview": "vite preview",
     "check:assets": "node scripts/check_assets.mjs",
-    "test": "node scripts/test_model_motion.mjs && node scripts/test_avatar_motion.mjs && node scripts/test_start_at_home.mjs && node scripts/test_hero_playback.mjs && node scripts/test_software_loop.mjs && node scripts/verify_featured_model.mjs && node scripts/check_assets.mjs"
+    "check:github": "node scripts/check_github_ready.mjs",
+    "test": "node scripts/test_model_motion.mjs && node scripts/test_model_touch.mjs && node scripts/test_avatar_motion.mjs && node scripts/test_start_at_home.mjs && node scripts/test_hero_playback.mjs && node scripts/test_scene_playback.mjs && node scripts/test_software_loop.mjs && node scripts/verify_featured_model.mjs && node scripts/test_media.mjs && node scripts/check_assets.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -22,6 +24,7 @@
     "@types/react-dom": "^18.3.5",
     "@types/three": "0.180.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "sharp": "0.34.5",
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
   }

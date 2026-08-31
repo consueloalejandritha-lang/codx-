@@ -5,6 +5,7 @@ import { createRequire } from 'node:module';
 import { Box3, Vector3, BufferGeometry, BufferAttribute } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { loadModule } from './load_source.mjs';
+import sharp from 'sharp';
 
 const filename = process.argv[2] ?? 'public/portfolio-assets/12-models/pistol-blend-baked.glb';
 const { categories, featuredProjects } = await loadModule('src/data/portfolio.ts');
@@ -25,8 +26,9 @@ for (const image of document.images ?? []) {
   assert.ok(Number.isInteger(image.bufferView), 'All textures must be embedded');
   const view = document.bufferViews[image.bufferView];
   const data = binary.subarray(view.byteOffset, view.byteOffset + view.byteLength);
-  assert.equal(data.readUInt32BE(0), 0x89504e47, 'Expected PNG');
-  largestTexture = Math.max(largestTexture, data.readUInt32BE(16), data.readUInt32BE(20));
+  const metadata = await sharp(data).metadata();
+  assert.ok(['png', 'webp'].includes(metadata.format), 'Embedded browser-compatible texture');
+  largestTexture = Math.max(largestTexture, metadata.width, metadata.height);
 }
 for (const view of document.bufferViews) {
   assert.equal((view.byteOffset ?? 0) % 4, 0);
