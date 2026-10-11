@@ -17,6 +17,7 @@ const glb = bytes => {
 let animations = 0;
 let variants = 0;
 let textureChecks = 0;
+let expectedTextureChecks = 0;
 for (const [source, entry] of Object.entries(manifest.entries)) {
   const original = fs.readFileSync(`public${source}`);
   assert.equal(hash(original), entry.sourceHash, `Stale source: ${source}`);
@@ -25,6 +26,7 @@ for (const [source, entry] of Object.entries(manifest.entries)) {
   assert.equal(assetUrl(source, true), entry.mobile || entry.default);
   const originalImage = entry.kind === 'image' ? await sharp(original, { animated: true, limitInputPixels: false }).metadata() : null;
   const originalModel = entry.kind === 'model' ? glb(original) : null;
+  if (originalModel) expectedTextureChecks += originalModel.doc.images.length * entry.variants.length;
   if (entry.animated) animations++;
   for (const variant of entry.variants) {
     variants++;
@@ -84,6 +86,6 @@ for (const [source, entry] of Object.entries(manifest.entries)) {
   }
 }
 assert.equal(animations, 8);
-assert.equal(textureChecks, 8);
+assert.equal(textureChecks, expectedTextureChecks);
 assert.equal(assetUrl('/unknown-file.png'), '/unknown-file.png');
-console.log(`PASS: ${variants} variants, 8 animations retain frames/timing/alpha; both models retain geometry/materials/effects; source hashes match.`);
+console.log(`PASS: ${variants} variants, ${animations} animations retain frames/timing/alpha; both models retain geometry/materials/effects; ${textureChecks} model textures checked; source hashes match.`);
