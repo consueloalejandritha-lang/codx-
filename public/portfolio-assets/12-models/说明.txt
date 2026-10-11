@@ -1,5 +1,10 @@
-交互模型位置：作品归档 → 03 Plasticity 建模 → 工业形体 → Plasticity 01
+交互模型位置：作品归档 → 03 Plasticity 建模 → 工业形体 → Plasticity 01；头盔 → Plasticity 02
 精选项目第03张「枪械制造」保持静态图片，不加载模型。
+
+头盔编辑入口：helmet-blender.glb。来源为 G:\次世代流程\头盔\blender\头盔.blend，原始工程未改动。
+头盔的可编辑 PBR 贴图位于项目根目录 assets/helmet-pbr/，网页备用图为 03-plasticity/plasticity-05.jpg。
+如需从原始 Blender 工程重新导出，先运行 scripts/create_helmet_pbr.mjs，再用 Blender 执行 scripts/export_helmet_web.py，最后运行 pnpm media。
+头盔展示比例单独设置于 src/components/modelViewer.ts，不影响手枪。
 
 固定编辑入口：pistol-blend-baked.glb；网站实际读取生成的轻量版本。
 来源：本次提供的「手枪枪口火焰渲染.blend」打包工程，重新提取与转换。
@@ -22,7 +27,7 @@
 - 精选「枪械制造」的静态图：03-plasticity/plasticity-06.jpg。
 
 交互
-- 鼠标跟随约水平±39°、垂直±17°，移出平滑回正。
+- 鼠标跟随约水平±100°、垂直±37°，移出平滑回正。
 - 模型就绪后支持触屏全方向拖动，松手回正；窗口内由模型接管拖动，窗口外仍正常滚动页面。
 - 键盘方向键旋转，Home或Escape回正。
 - 进入可见区域附近才加载；失败时显示该位置的原静态图片。

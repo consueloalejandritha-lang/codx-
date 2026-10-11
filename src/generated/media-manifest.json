@@ -925,39 +925,33 @@
     },
     "/portfolio-assets/03-plasticity/plasticity-05.jpg": {
       "revision": "image-v2",
-      "sourceHash": "631b41118040fc2969f5c263caf2d22c300af129b40ba3bba63806f182398766",
-      "sourceBytes": 368185,
+      "sourceHash": "a91655945970aeb37f93bee06dfc213188653d980da8970e3845554bb7ed2678",
+      "sourceBytes": 131347,
       "kind": "image",
       "animated": false,
       "alpha": false,
       "frames": 1,
       "variants": [
         {
-          "url": "/optimized-assets/03-plasticity-plasticity-05-480w-c32eccf302c9.webp",
-          "bytes": 24080,
+          "url": "/optimized-assets/03-plasticity-plasticity-05-480w-7fd32efe7d55.webp",
+          "bytes": 10370,
           "width": 480,
-          "height": 618
+          "height": 360
         },
         {
-          "url": "/optimized-assets/03-plasticity-plasticity-05-960w-448ffd30607a.webp",
-          "bytes": 82604,
+          "url": "/optimized-assets/03-plasticity-plasticity-05-960w-5ae0defd741a.webp",
+          "bytes": 27176,
           "width": 960,
-          "height": 1236
+          "height": 720
         },
         {
-          "url": "/optimized-assets/03-plasticity-plasticity-05-1600w-0ec47aaedc72.webp",
-          "bytes": 189438,
+          "url": "/optimized-assets/03-plasticity-plasticity-05-1600w-b0cde40d2784.webp",
+          "bytes": 54134,
           "width": 1600,
-          "height": 2060
-        },
-        {
-          "url": "/optimized-assets/03-plasticity-plasticity-05-1864w-2e3ea89e0df1.webp",
-          "bytes": 242328,
-          "width": 1864,
-          "height": 2400
+          "height": 1200
         }
       ],
-      "default": "/optimized-assets/03-plasticity-plasticity-05-1864w-2e3ea89e0df1.webp"
+      "default": "/optimized-assets/03-plasticity-plasticity-05-1600w-b0cde40d2784.webp"
     },
     "/portfolio-assets/03-plasticity/plasticity-06.jpg": {
       "revision": "image-v2",
@@ -1210,6 +1204,288 @@
         }
       ],
       "default": "/optimized-assets/04-boolean-boolean-05-2400w-bef4188e6c40.webp"
+    },
+    "/portfolio-assets/05-product-rendering/beauty-01.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "047fe7d06feed7a1c5e25da94988270bf578dde7ced454d9a652bcaa6a971cff",
+      "sourceBytes": 104150,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-01-480w-ceaf07ad0d85.webp",
+          "bytes": 6636,
+          "width": 480,
+          "height": 480
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-01-960w-ee579f02053d.webp",
+          "bytes": 17792,
+          "width": 960,
+          "height": 960
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-01-1600w-6eb8dcc3a6bd.webp",
+          "bytes": 37828,
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-01-1920w-0cbca79bed8c.webp",
+          "bytes": 48566,
+          "width": 1920,
+          "height": 1920
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-beauty-01-1920w-0cbca79bed8c.webp"
+    },
+    "/portfolio-assets/05-product-rendering/beauty-02.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "3fd79d28eeb481e7230122d54ce7064ac38db95befa4ce601745cb0259d8cf78",
+      "sourceBytes": 174988,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-02-480w-81978cf705b8.webp",
+          "bytes": 13024,
+          "width": 480,
+          "height": 709
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-02-960w-9aff9d6edb95.webp",
+          "bytes": 32492,
+          "width": 960,
+          "height": 1418
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-02-1600w-b543f6ae27ac.webp",
+          "bytes": 64012,
+          "width": 1600,
+          "height": 2363
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-02-1950w-58f7fb457d50.webp",
+          "bytes": 84878,
+          "width": 1950,
+          "height": 2880
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-beauty-02-1950w-58f7fb457d50.webp"
+    },
+    "/portfolio-assets/05-product-rendering/beauty-03.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "945902801c6a52282170fccb306fa4eaa614b67949bd1a433153c9b7f442732f",
+      "sourceBytes": 525086,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-03-480w-40b25604266a.webp",
+          "bytes": 34386,
+          "width": 480,
+          "height": 350
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-03-960w-a988ae71f17b.webp",
+          "bytes": 129150,
+          "width": 960,
+          "height": 700
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-03-1600w-f83e1a135ca0.webp",
+          "bytes": 294950,
+          "width": 1600,
+          "height": 1167
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-03-1920w-0c6d1b460b7f.webp",
+          "bytes": 384554,
+          "width": 1920,
+          "height": 1400
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-beauty-03-1920w-0c6d1b460b7f.webp"
+    },
+    "/portfolio-assets/05-product-rendering/beauty-04.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "743dbddf42b381bc8a1134cdd7a87a2461211496185a4bd7bce4f76463e8bd52",
+      "sourceBytes": 145395,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-04-480w-1e94c111aaae.webp",
+          "bytes": 14654,
+          "width": 480,
+          "height": 595
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-04-960w-671d874fbc13.webp",
+          "bytes": 35868,
+          "width": 960,
+          "height": 1189
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-04-1550w-f9245521a834.webp",
+          "bytes": 66146,
+          "width": 1550,
+          "height": 1920
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-beauty-04-1550w-f9245521a834.webp"
+    },
+    "/portfolio-assets/05-product-rendering/beauty-05.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "ffd35c01427e5e5a5810f301891836ed0735dc14dd944bd3e6504131243183be",
+      "sourceBytes": 298655,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-05-480w-a9fd263b124c.webp",
+          "bytes": 27810,
+          "width": 480,
+          "height": 853
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-05-960w-52ea543adff2.webp",
+          "bytes": 75270,
+          "width": 960,
+          "height": 1707
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-05-1600w-1cd39ba1eacb.webp",
+          "bytes": 150096,
+          "width": 1600,
+          "height": 2844
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-05-1620w-56c233b9bfa2.webp",
+          "bytes": 153038,
+          "width": 1620,
+          "height": 2880
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-beauty-05-1620w-56c233b9bfa2.webp"
+    },
+    "/portfolio-assets/05-product-rendering/beauty-06.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "3938e06bd880714f3c8f843b0df70582d96859ec98739f93c1e7ff33180e07cb",
+      "sourceBytes": 254530,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-06-480w-bacf4cd3855c.webp",
+          "bytes": 16752,
+          "width": 480,
+          "height": 658
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-06-960w-7fb4d03b3c00.webp",
+          "bytes": 47050,
+          "width": 960,
+          "height": 1317
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-06-1600w-4956b4ca30bc.webp",
+          "bytes": 99992,
+          "width": 1600,
+          "height": 2194
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-beauty-06-2100w-304fb3595f46.webp",
+          "bytes": 149182,
+          "width": 2100,
+          "height": 2880
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-beauty-06-2100w-304fb3595f46.webp"
+    },
+    "/portfolio-assets/05-product-rendering/product-05.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "1892e54eaff72def6102c480bbac4592fb68183ae2aeb6b9e5990a9f4bea5924",
+      "sourceBytes": 172520,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-product-05-480w-dc98c4b0c419.webp",
+          "bytes": 8476,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-product-05-960w-4ede31e9a3ee.webp",
+          "bytes": 22158,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-product-05-1600w-0acdeb28ffc6.webp",
+          "bytes": 44892,
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-product-05-2400w-d628f6c284fe.webp",
+          "bytes": 73182,
+          "width": 2400,
+          "height": 1350
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-product-05-2400w-d628f6c284fe.webp"
+    },
+    "/portfolio-assets/05-product-rendering/product-06.jpg": {
+      "revision": "image-v2",
+      "sourceHash": "f7cfb3f6d43f8114c3818ceb6e687aefe5776103ef25f4ec10ad29a2f5ffd6f7",
+      "sourceBytes": 391785,
+      "kind": "image",
+      "animated": false,
+      "alpha": false,
+      "frames": 1,
+      "variants": [
+        {
+          "url": "/optimized-assets/05-product-rendering-product-06-480w-504f7d1354c5.webp",
+          "bytes": 12686,
+          "width": 480,
+          "height": 375
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-product-06-960w-56114e1e9368.webp",
+          "bytes": 39002,
+          "width": 960,
+          "height": 750
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-product-06-1600w-170906e96b5d.webp",
+          "bytes": 90004,
+          "width": 1600,
+          "height": 1250
+        },
+        {
+          "url": "/optimized-assets/05-product-rendering-product-06-2400w-a257feb72c26.webp",
+          "bytes": 163606,
+          "width": 2400,
+          "height": 1875
+        }
+      ],
+      "default": "/optimized-assets/05-product-rendering-product-06-2400w-a257feb72c26.webp"
     },
     "/portfolio-assets/05-rigging/rigging-01.webp": {
       "revision": "image-v2",
@@ -2202,6 +2478,26 @@
         }
       ],
       "default": "/optimized-assets/11-software-software-icons-1536w-6e3abb05398b.webp"
+    },
+    "/portfolio-assets/12-models/helmet-blender.glb": {
+      "revision": "v1",
+      "sourceHash": "6005baa5758acf1056158a2c70461a0aea1903f530a8ff14472821fd2654d5ee",
+      "sourceBytes": 4812900,
+      "kind": "model",
+      "variants": [
+        {
+          "url": "/optimized-assets/12-models-helmet-blender-1024-a8b83b1a3c11.glb",
+          "bytes": 3262480,
+          "maxTexture": 1024
+        },
+        {
+          "url": "/optimized-assets/12-models-helmet-blender-2048-a8b83b1a3c11.glb",
+          "bytes": 3262480,
+          "maxTexture": 2048
+        }
+      ],
+      "mobile": "/optimized-assets/12-models-helmet-blender-1024-a8b83b1a3c11.glb",
+      "default": "/optimized-assets/12-models-helmet-blender-2048-a8b83b1a3c11.glb"
     },
     "/portfolio-assets/12-models/pistol-blend-baked.glb": {
       "sourceHash": "9e7f086342d74b2ec27e2f6f276f410300fb2982c3abeff2041ce5cde692d46e",

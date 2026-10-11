@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { loadModule } from './load_source.mjs';
 const { pointerRotation, approachAngle, MAX_PITCH, MAX_YAW } = await loadModule('src/components/modelMotion.ts');
+assert.equal(MAX_PITCH, 0.65, 'Both interactive models use the wider vertical rotation range');
+assert.equal(MAX_YAW, 1.75, 'Both interactive models use the wider horizontal rotation range');
 assert.deepEqual(pointerRotation(0, 0), { pitch: 0, yaw: 0 });
 assert.deepEqual(pointerRotation(2, -2), { pitch: -MAX_PITCH, yaw: MAX_YAW });
 assert.deepEqual(pointerRotation(-1, 1), { pitch: MAX_PITCH, yaw: -MAX_YAW });

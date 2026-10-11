@@ -154,6 +154,13 @@ h1 span:last-child { color: var(--acid); text-shadow: 0 0 60px rgba(255,255,255,
 .work-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .work-media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #030303; }
 .work-card:last-child:nth-child(odd) .work-media { aspect-ratio: 8 / 3; }
+.category-product-rendering .work-card:last-child:nth-child(odd) { grid-column: auto; }
+.category-product-rendering .series-grid { background: var(--ink); }
+.category-product-rendering .work-media,
+.category-product-rendering .work-card:last-child:nth-child(odd) .work-media { aspect-ratio: 1; }
+.product-image-slot { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border: 1px dashed var(--soft-line); background: var(--ink); color: var(--muted); }
+.product-image-slot span { font: 300 34px/1 var(--mono); }
+.product-image-slot small { font: 700 8px/1 var(--mono); letter-spacing: .1em; }
 .work-media img { height: 100%; object-fit: contain; filter: grayscale(.08) saturate(.82); transition: transform .65s ease, filter .35s ease; }
 .work-card:hover img { transform: scale(1.03); filter: grayscale(0) saturate(1); }
 .work-count { position: absolute; top: 12px; right: 12px; padding: 7px 9px; background: rgba(5,6,6,.78); color: var(--acid); font: 700 8px/1 var(--mono); letter-spacing: .1em; }
@@ -237,6 +244,10 @@ h1 span:last-child { color: var(--acid); text-shadow: 0 0 60px rgba(255,255,255,
 .chapter-menu header { display: flex; justify-content: space-between; gap: 18px; padding: 15px 16px; border-bottom: 1px solid var(--soft-line); }
 .chapter-menu header span, .chapter-menu header small { color: var(--muted); font: 700 7px/1 var(--mono); letter-spacing: .1em; }
 .chapter-menu a { display: grid; grid-template-columns: 28px 1fr auto; align-items: center; gap: 8px; padding: 13px 16px; border-bottom: 1px solid var(--soft-line); transition: background .2s ease, color .2s ease; }
+.chapter-menu a.is-subchapter { grid-template-columns: 38px minmax(0, 1fr); padding: 9px 16px 9px 23px; background: rgba(255,255,255,.035); }
+.chapter-menu a.is-subchapter > small { display: none; }
+.chapter-menu a.is-subchapter strong { font-size: 11px; font-weight: 500; }
+.chapter-menu a.is-subchapter:hover, .chapter-menu a.is-subchapter:focus-visible { background: var(--paper); }
 .chapter-menu a:last-child { border-bottom: 0; }
 .chapter-menu a:hover, .chapter-menu a:focus-visible { background: var(--paper); color: var(--ink); outline: none; }
 .chapter-menu a > span, .chapter-menu a > small { color: var(--muted); font: 700 7px/1 var(--mono); letter-spacing: .08em; }

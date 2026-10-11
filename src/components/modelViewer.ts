@@ -35,20 +35,21 @@ function disposeObject(root: THREE.Object3D) {
   geometries.forEach((geometry) => geometry.dispose());
 }
 
-export function createModelViewer(host: HTMLDivElement, src: string, onStatus: (status: ModelStatus) => void): ModelController {
+export function createModelViewer(host: HTMLDivElement, src: string, onStatus: (status: ModelStatus) => void, appearance: 'default' | 'helmet' = 'default'): ModelController {
   const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: 'low-power' });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
   renderer.setClearColor(0x000000, 0);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.25;
+  renderer.toneMappingExposure = appearance === 'helmet' ? 1.0 : 1.25;
   renderer.domElement.setAttribute('aria-hidden', 'true');
   host.appendChild(renderer.domElement);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(35, 1, 0.05, 100);
-  // Double the on-screen model size without changing the archive card or lighting.
-  camera.zoom = 2;
-  const baseRotation = new THREE.Euler(-0.04, -0.25, -0.035);
+  // Keep the helmet's brim and chin visible during rotation; preserve the
+  // original pistol framing for the other interactive card.
+  camera.zoom = appearance === 'helmet' ? 1.7 : 2;
+  const baseRotation = new THREE.Euler(-0.04, appearance === 'helmet' ? -0.45 : -0.25, -0.035);
   const request = new AbortController();
   const draco = new DRACOLoader();
   draco.setDecoderPath(`${import.meta.env.BASE_URL}vendor/draco/`);
@@ -138,8 +139,8 @@ export function createModelViewer(host: HTMLDivElement, src: string, onStatus: (
       try { environment = pmrem.fromScene(studio, 0.04); }
       finally { studio.dispose(); pmrem.dispose(); }
       scene.environment = environment.texture;
-      scene.add(new THREE.HemisphereLight(0xffffff, 0x444444, 2));
-      const key = new THREE.DirectionalLight(0xffffff, 3);
+      scene.add(new THREE.HemisphereLight(0xffffff, 0x444444, appearance === 'helmet' ? 1.6 : 2));
+      const key = new THREE.DirectionalLight(0xffffff, appearance === 'helmet' ? 2.2 : 3);
       key.position.set(3, 5, 6);
       scene.add(key);
       model.rotation.copy(baseRotation);

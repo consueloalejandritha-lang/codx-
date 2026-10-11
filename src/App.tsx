@@ -32,7 +32,15 @@ type SectionLabelProps = {
   title: string;
 };
 
-const chapters = [
+type Chapter = {
+  number: string;
+  label: string;
+  english: string;
+  href: string;
+  isSubchapter?: boolean;
+};
+
+const chapters: Chapter[] = [
   { number: '01', label: '首页', english: 'HOME', href: '#home' },
   { number: '02', label: '个人介绍', english: 'ABOUT', href: '#about' },
   { number: '03', label: '精选项目', english: 'SELECTED', href: '#featured' },
@@ -43,6 +51,25 @@ const chapters = [
 ];
 
 const headerNavigation = chapters.slice(1, 6);
+const archiveChapters: Chapter[] = [
+  ...categories.map((category, index) => ({
+    number: `06.${String(index + 1).padStart(2, '0')}`,
+    label: category.title,
+    english: category.english,
+    href: `#${category.id}`,
+    isSubchapter: true,
+  })),
+  {
+    number: `06.${String(categories.length + 1).padStart(2, '0')}`,
+    label: 'Spine 与动画',
+    english: 'SPINE AND ANIMATION',
+    href: '#spin',
+    isSubchapter: true,
+  },
+];
+const quickNavigationChapters = chapters.flatMap((chapter) =>
+  chapter.href === '#archive' ? [chapter, ...archiveChapters] : [chapter],
+);
 
 function SectionLabel({ number, title }: SectionLabelProps) {
   return (
@@ -253,13 +280,13 @@ function PortfolioArchive() {
             <span>展示</span>
           </h2>
           <p>
-            涵盖硬表面建模、细分曲面、布尔流程与早期创作，记录不同阶段对结构、形态和三维视觉语言的持续探索。
+            涵盖硬表面建模、细分曲面、CAD 曲面、产品渲染与早期创作，记录不同阶段对结构、材质和三维视觉语言的持续探索。
           </p>
         </div>
       </div>
 
       {categories.map((category, categoryIndex) => (
-        <section className="category shell" id={category.id} key={category.id}>
+        <section className={`category shell category-${category.id}`} id={category.id} key={category.id}>
           <header className="category-head">
             <span>{String(categoryIndex + 1).padStart(2, '0')}</span>
             <div>
@@ -287,9 +314,9 @@ function PortfolioArchive() {
                     return (
                       <article className={`work-card aspect-${item.aspect}${item.model ? ' work-model-card' : ''}`} key={item.id}>
                         <div className="work-media">
-                          {item.model ? <InteractiveModel src={item.model} poster={item.image} title={item.title} /> : <OptimizedImage
+                          {item.model ? <InteractiveModel src={item.model} poster={item.image} title={item.title} appearance={item.id === 'plasticity-02' ? 'helmet' : 'default'} /> : <OptimizedImage
                             src={item.image}
-                            sizes={items.length % 2 === 1 && seriesItemIndex === items.length - 1 ? IMAGE_SIZES.full : IMAGE_SIZES.pair}
+                            sizes={category.id !== 'product-rendering' && items.length % 2 === 1 && seriesItemIndex === items.length - 1 ? IMAGE_SIZES.full : IMAGE_SIZES.pair}
                             alt={item.title}
                             loading="lazy"
                             decoding="async"
@@ -309,6 +336,12 @@ function PortfolioArchive() {
                       </article>
                     );
                   })}
+                  {category.id === 'product-rendering' && items.length % 2 === 1 && (
+                    <div className="product-image-slot" aria-label="预留图片位置">
+                      <span aria-hidden="true">+</span>
+                      <small>可继续添加图片</small>
+                    </div>
+                  )}
                 </div>
               </section>
             ))}
@@ -318,7 +351,7 @@ function PortfolioArchive() {
 
       <section className="category spin-category shell" id="spin">
         <header className="category-head">
-          <span>07</span>
+          <span>{String(categories.length + 1).padStart(2, '0')}</span>
           <div>
             <p>SPINE AND ANIMATION</p>
             <h3>Spine 与动画</h3>
@@ -530,8 +563,13 @@ function FloatingNavigation() {
             <span>QUICK NAVIGATION</span>
             <small>选择章节</small>
           </header>
-          {chapters.map((chapter) => (
-            <a href={chapter.href} key={chapter.href} onClick={() => setMenuOpen(false)}>
+          {quickNavigationChapters.map((chapter) => (
+            <a
+              className={chapter.isSubchapter ? 'is-subchapter' : undefined}
+              href={chapter.href}
+              key={chapter.href}
+              onClick={() => setMenuOpen(false)}
+            >
               <span>{chapter.number}</span>
               <strong>{chapter.label}</strong>
               <small>{chapter.english}</small>

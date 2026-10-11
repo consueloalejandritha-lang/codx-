@@ -113,7 +113,7 @@ async function optimizeModel(file, stem) {
     const { document, binary } = readGlb(original);
     const parts = document.bufferViews.map(view => binary.subarray(view.byteOffset || 0, (view.byteOffset || 0) + view.byteLength));
     for (const image of document.images) {
-      const dataMap = /normal|orm/i.test(image.name || '');
+      const dataMap = /normal|orm|metallic|roughness/i.test(image.name || '');
       const texture = await sharp(parts[image.bufferView]).resize({ width: maxSize, height: maxSize, fit: 'inside', withoutEnlargement: true })
         .webp({ lossless: dataMap, quality: 92, alphaQuality: 100, effort: 6 }).toBuffer();
       parts[image.bufferView] = texture;

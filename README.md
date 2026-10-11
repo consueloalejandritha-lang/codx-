@@ -32,7 +32,7 @@ scripts/
 - 精选项目：修改 `featuredProjects`。
 - 精选第03项「枪械制造」保持静态图片 `03-plasticity/plasticity-06.jpg`。
 - 交互模型位于作品归档「03 Plasticity 建模 → 工业形体 → Plasticity 01」，读取 `12-models/pistol-blend-baked.glb`，备用图为 `03-plasticity/plasticity-01.jpg`。模型由新提供的打包 Blender 工程重新生成，不复用旧 GLB。
-- 3D 交互：鼠标跟随/移开回正、触屏全方向拖动/松手回正、按视口加载和静态图兜底。模型就绪后，模型窗口内的手势由模型接管，窗口外正常滚动页面；拖动期间捕获手指，移出窗口不提前中断。旋转范围约水平±39°、垂直±17°；保留工程第7帧实际生成的火焰、烟雾、弹壳和弹头，是静态三维展示而非原工程动画。
+- 3D 交互：鼠标跟随/移开回正、触屏全方向拖动/松手回正、按视口加载和静态图兜底。模型就绪后，模型窗口内的手势由模型接管，窗口外正常滚动页面；拖动期间捕获手指，移出窗口不提前中断。旋转范围约水平±100°、垂直±37°；保留工程第7帧实际生成的火焰、烟雾、弹壳和弹头，是静态三维展示而非原工程动画。
 - 模型解码资源保存在 `public/vendor/draco/`，无需外部 CDN；发布时一起保留。转换说明见 `scripts/PISTOL_PIPELINE.md`。
 - 首页视频：替换 `public/portfolio-assets/00-hero/` 中的 WebM 与 MP4。优先保留透明 WebM，MP4 用于兼容回退。只有首页可见时播放，离开首页或切到后台暂停；循环保留700ms渐隐再渐显，播放失败显示封面。逻辑位于 `src/components/heroPlayback.ts`。
 - 首页视频封面：替换 `public/portfolio-assets/00-hero/hero-poster.jpg`。

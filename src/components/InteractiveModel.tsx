@@ -6,9 +6,9 @@ import { createModelTouch } from './modelTouch';
 import { assetUrl, IMAGE_SIZES } from '../media';
 import OptimizedImage from './OptimizedImage';
 
-type Props = { src: string; poster: string; title: string };
+type Props = { src: string; poster: string; title: string; appearance?: 'default' | 'helmet' };
 
-export default function InteractiveModel({ src, poster, title }: Props) {
+export default function InteractiveModel({ src, poster, title, appearance = 'default' }: Props) {
   const regionRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const controllerRef = useRef<ModelController>();
@@ -34,7 +34,7 @@ export default function InteractiveModel({ src, poster, title }: Props) {
         const compact = window.matchMedia('(max-width: 1024px)').matches;
         controllerRef.current = createModelViewer(stage, assetUrl(src, compact), (next) => {
           if (!cancelled) setStatus(next);
-        });
+        }, appearance);
         controllerRef.current.setVisible(inView);
       }).catch(() => { if (!cancelled) setStatus('error'); });
     }, { rootMargin: '160px' });
@@ -45,7 +45,7 @@ export default function InteractiveModel({ src, poster, title }: Props) {
       controllerRef.current?.dispose();
       controllerRef.current = undefined;
     };
-  }, [src]);
+  }, [src, appearance]);
 
   const reset = () => {
     touchRef.current.reset();

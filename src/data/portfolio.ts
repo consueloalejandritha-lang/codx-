@@ -28,7 +28,7 @@ export const profile = {
   bioSecondary: '在创作中，我关注的不只是模型的外形，也重视结构关系、功能逻辑与视觉节奏。希望通过准确的造型、克制的细节和富有氛围的动态表达，让每一件作品都拥有可信度与辨识度。',
   stats: [
     { value: '03+', label: '年创作经验' },
-    { value: '58', label: '作品展示' },
+    { value: '63', label: '作品展示' },
     { value: '13+', label: '掌握软件数量' },
     { value: '∞', label: '持续探索' },
   ],
@@ -88,10 +88,25 @@ export const categories: PortfolioCategory[] = [
     english: 'PLASTICITY / CAD MODELING',
     description: '运用 NURBS 与 CAD 建模逻辑塑造干净、锐利的工业曲面，探索硬朗结构与流畅轮廓之间的平衡。',
     items: createItems('plasticity', '03-plasticity', 'Plasticity', 'PLASTICITY · CAD SURFACE', [
-      ['plasticity-01.jpg', 'portrait', '工业形体', undefined, 'pistol-blend-baked.glb'], ['plasticity-02.jpg', 'square', '装置系列'],
-      ['plasticity-03.jpg', 'portrait', '装置系列'], ['plasticity-04.jpg', 'square', '装置系列'],
-      ['plasticity-05.jpg', 'portrait', '装置系列'],
+      ['plasticity-01.jpg', 'portrait', '工业形体', undefined, 'pistol-blend-baked.glb'],
+      ['plasticity-05.jpg', 'portrait', '头盔', '头盔 · PBR 材质展示', 'helmet-blender.glb'],
       ['plasticity-06.jpg', 'landscape', '战术手枪'], ['plasticity-07.jpg', 'landscape', '战术手枪'],
+    ]),
+  },
+  {
+    id: 'product-rendering',
+    title: '产品渲染展示',
+    english: 'PRODUCT RENDERING',
+    description: '以造型、材质与光影呈现产品视觉，涵盖美妆包装与数码产品。',
+    items: createItems('product-rendering', '05-product-rendering', '产品渲染', 'PRODUCT RENDERING', [
+      ['beauty-01.jpg', 'portrait', '美妆产品', '美容仪产品渲染'],
+      ['beauty-02.jpg', 'portrait', '美妆产品', '精华液质感展示'],
+      ['beauty-03.jpg', 'landscape', '美妆产品', '香氛包装渲染'],
+      ['beauty-04.jpg', 'portrait', '美妆产品', '粉底液包装渲染'],
+      ['beauty-05.jpg', 'portrait', '美妆产品', '面霜罐产品渲染'],
+      ['beauty-06.jpg', 'portrait', '美妆产品', '护肤套装渲染'],
+      ['product-05.jpg', 'landscape', '数码产品', '航拍无人机产品渲染'],
+      ['product-06.jpg', 'landscape', '数码产品', '数码扩展坞产品渲染'],
     ]),
   },
   {
@@ -170,5 +185,5 @@ export const strengths = [
   { number: '01', title: '硬表面建模', english: 'HARD SURFACE MODELING', text: '根据功能与结构关系拆分形体，在机械逻辑、造型比例和细节密度之间取得平衡。', tags: ['BLENDER', 'PLASTICITY', 'SUBDIVISION'] },
   { number: '02', title: '拓扑与布线', english: 'TOPOLOGY & EDGE FLOW', text: '针对细分、变形和动画需求规划拓扑，使复杂曲面保持干净、稳定，并便于后续调整。', tags: ['QUAD FLOW', 'RETOPOLOGY', 'UV'] },
   { number: '03', title: '全流程制作', english: 'FULL PIPELINE', text: '独立完成建模、拓扑、展 UV、材质直至渲染输出的全流程建模工作。', tags: ['PBR', 'CYCLES', 'COMPOSITING'] },
-  { number: '04', title: '独立动画制作', english: 'INDEPENDENT ANIMATION', text: '独立完成分镜、动画、镜头设计、渲染与后期，让静态模型转化为完整、连贯的动态表达。', tags: ['ANIMATION', 'CAMERA', 'EDITING'] },
+  { number: '04', title: '产品渲染表现', english: 'PRODUCT RENDERING', text: '针对产品的不同质感，结合材质、布光与镜头构图，突出造型细节与产品气质，完成清晰、有氛围的展示画面。', tags: ['LOOKDEV', 'LIGHTING', 'COMPOSITION'] },
 ];

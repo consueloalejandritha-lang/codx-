@@ -1,6 +1,6 @@
-// About ±17° vertically and ±39° horizontally, around the default viewing angle.
-export const MAX_PITCH = 0.30;
-export const MAX_YAW = 0.68;
+// About ±37° vertically and ±100° horizontally, around the default viewing angle.
+export const MAX_PITCH = 0.65;
+export const MAX_YAW = 1.75;
 export const clampUnit = (value: number) => Math.max(-1, Math.min(1, value));
 
 export function pointerRotation(x: number, y: number) {
